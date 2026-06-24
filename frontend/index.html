@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SafeConnect AI | Precision Career Protection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#dec29a",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#b4c5ff",
+                    "secondary-container": "#316bf3",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-secondary-fixed-variant": "#003ea8",
+                    "surface-bright": "#f8f9ff",
+                    "secondary-fixed": "#dbe1ff",
+                    "on-background": "#0b1c30",
+                    "inverse-primary": "#bec6e0",
+                    "tertiary": "#000000",
+                    "surface-container-high": "#dce9ff",
+                    "outline": "#76777d",
+                    "on-surface-variant": "#45464d",
+                    "surface-variant": "#d3e4fe",
+                    "primary-fixed": "#dae2fd",
+                    "surface-tint": "#565e74",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#eff4ff",
+                    "outline-variant": "#c6c6cd",
+                    "surface-container-highest": "#d3e4fe",
+                    "surface": "#f8f9ff",
+                    "on-error": "#ffffff",
+                    "primary-container": "#131b2e",
+                    "primary": "#000000",
+                    "tertiary-container": "#271901",
+                    "on-primary-container": "#7c839b",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "on-tertiary-fixed-variant": "#574425",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-tertiary-fixed": "#271901",
+                    "surface-container": "#e5eeff",
+                    "on-tertiary-container": "#98805d",
+                    "background": "#f8f9ff",
+                    "surface-dim": "#cbdbf5",
+                    "on-secondary-container": "#fefcff",
+                    "secondary": "#0051d5",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#00174b",
+                    "on-primary-fixed": "#131b2e",
+                    "inverse-surface": "#213145",
+                    "tertiary-fixed": "#fcdeb5",
+                    "on-surface": "#0b1c30"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "40px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-shield {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .risk-gauge {
+            stroke-dasharray: 251.2;
+            stroke-dashoffset: 62.8; /* Represents 75% */
+            transition: stroke-dashoffset 1s ease-out;
+        }
+        body {
+            background-color: #f8f9ff;
+            color: #0b1c30;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="font-body-md">
+<!-- TopAppBar -->
+<header class="bg-surface-bright sticky top-0 z-50 flex items-center justify-between h-16 px-margin-desktop border-b border-outline-variant transition-all duration-300">
+<div class="flex items-center gap-base">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">shield_lock</span>
+<h1 class="font-headline-md text-headline-md font-extrabold text-primary">SafeConnect AI</h1>
+</div>
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="font-label-md text-label-md text-secondary font-bold" href="index.html">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" href="verification-hub.html">Features</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-colors" href="scam-ledger.html">Safety Reports</a>
+<div class="flex items-center gap-base border-l border-outline-variant pl-gutter">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-secondary">notifications</span>
+<div id="auth-slot"></div>
+</div>
+</nav>
+<button class="md:hidden material-symbols-outlined">menu</button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden px-margin-desktop py-gutter">
+
+<div class="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-base">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        V3.0 LIVE: REAL-TIME VERIFICATION
+                    </div>
+<h2 class="font-display text-display text-primary leading-tight">
+                        Protect Your Career from <span class="text-secondary">Recruitment Fraud.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl py-4">
+                        The AI-powered browser extension and dashboard that verifies recruiters, analyzes scam messages, and scores job offers in real-time.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-xl font-label-md text-label-md flex items-center gap-2 hover:opacity-90 transition-all scale-100 active:scale-95 shadow-lg" href="verification-hub.html">
+<span class="material-symbols-outlined">download</span>
+                            Get the Extension
+                        </a>
+<a class="bg-surface-container-lowest border border-outline-variant text-primary px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-surface-variant transition-all" href="dashboard.html">
+                            Access Dashboard
+                        </a>
+</div>
+</div>
+<!-- Chrome Extension Preview Mockup -->
+<div class="relative">
+<div class="glass-shield rounded-[2rem] p-6 shadow-2xl relative z-10 max-w-sm mx-auto">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-md text-label-md font-bold">SafeConnect Analysis</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-sm">settings</span>
+</div>
+<div class="space-y-gutter">
+<!-- Risk Gauge -->
+<div class="relative flex flex-col items-center">
+<svg class="w-32 h-32 transform -rotate-90">
+<circle class="text-surface-container-high" cx="64" cy="64" fill="transparent" r="56" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-secondary transition-all duration-1000" cx="64" cy="64" fill="transparent" r="56" stroke="currentColor" stroke-dasharray="351.8" stroke-dashoffset="87.9" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-lg text-headline-lg">75</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Safe</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-4 space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold">Recruiter: Sarah Jenkins</span>
+<span class="bg-green-100 text-green-700 px-2 py-0.5 rounded text-[10px] font-bold">VERIFIED</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant italic">"LinkedIn profile matches enterprise records."</p>
+</div>
+<div class="space-y-base">
+<div class="flex items-center gap-3 p-3 rounded-lg border border-error-container bg-error-container/10">
+<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="font-label-sm text-label-sm text-on-surface">Suspicious Link detected in message payload.</span>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-3 rounded-xl font-label-md text-label-md">Report Anomaly</button>
+</div>
+</div>
+<!-- Decorative back elements -->
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -bottom-20 -left-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Features -->
+<section class="px-margin-desktop py-24 bg-white">
+<div class="container mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Enterprise-Grade Career Security</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">We utilize advanced neural networks and cryptographic verification to ensure every interaction in your job search is authentic.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Feature 1 -->
+<div class="md:col-span-2 bg-surface-container-low rounded-[2rem] p-8 flex flex-col justify-between border border-outline-variant hover:border-secondary transition-colors group">
+<div class="flex justify-between items-start">
+<div class="p-4 bg-white rounded-2xl shadow-sm">
+<span class="material-symbols-outlined text-secondary text-3xl">verified_user</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-secondary transition-colors">arrow_outward</span>
+</div>
+<div class="mt-12">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Recruiter Verification</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Instantly cross-reference recruiter profiles against official company directories and historical hiring data.</p>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="bg-primary text-on-primary rounded-[2rem] p-8 flex flex-col justify-between hover:scale-[1.02] transition-transform">
+<div class="p-4 bg-primary-container rounded-2xl inline-block w-fit">
+<span class="material-symbols-outlined text-secondary text-3xl">security_update_good</span>
+</div>
+<div class="mt-8">
+<h3 class="font-headline-md text-headline-md mb-2">Message Analysis</h3>
+<p class="font-label-md text-label-md text-on-primary-container">AI-powered linguistic patterns detection that flags common phishing tactics used in fraudulent job offers.</p>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-bright rounded-[2rem] p-8 border border-outline-variant flex flex-col justify-between hover:shadow-xl transition-shadow">
+<div class="space-y-4">
+<div class="p-4 bg-secondary-container text-on-secondary-container rounded-2xl inline-block">
+<span class="material-symbols-outlined text-3xl">link</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary">Link Scanner</h3>
+</div>
+<div class="mt-8">
+<div class="h-1 bg-outline-variant rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-3/4"></div>
+</div>
+<p class="mt-4 font-label-sm text-label-sm text-on-surface-variant">Analyzed 1.2M suspicious domains this month.</p>
+</div>
+</div>
+<!-- Feature 4 -->
+<div class="md:col-span-2 bg-surface-container-highest rounded-[2rem] p-8 flex flex-col md:flex-row gap-8 items-center border border-outline-variant">
+<div class="flex-1">
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Job Authenticity Checker</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Our engine verifies the existence of job IDs, legal entities, and salary benchmarks to score the legitimacy of any offer.</p>
+</div>
+<div class="w-full md:w-1/3 h-48 rounded-2xl bg-white border border-outline-variant flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist 3D visualization of a digital certificate with a golden shield emblem, symbolizing authenticity and security in a corporate job market. Soft blue and silver lighting accents the metallic textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0dRoSUurPO6ng01Pts2TYUVqMtppBiQSgviz5IFnGkc5qrXwFcsEIxPUtNfTmewHd3_3z14xQ_N-t0Jh5ccvlEFh4EciU5-EItlxwhP7fEprc6Y5wH7zzNuPW7_vdin4DqDR_F9TGOxGkFaWwiS6dRqihOuDHK6gcomMMFXq-7b5lZoNv8O1vhmNA7hVzE0ZWjZS1uf8HbBBbojeWa8vFJycSA2rvAZM_8wBTA-bfiWM2zPwfr56rxedVj0adQuH_2xvGFMN54laT"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Explainable AI (XAI) Section -->
+<section class="px-margin-desktop py-24 bg-surface-container-lowest">
+<div class="container mx-auto grid lg:grid-cols-2 gap-16 items-center">
+<div class="order-2 lg:order-1">
+<div class="grid grid-cols-1 gap-4">
+<div class="glass-shield p-6 rounded-2xl shadow-sm">
+<div class="flex items-center gap-3 mb-3">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">AI Reasoning</span>
+<div class="flex-1 h-px bg-outline-variant"></div>
+</div>
+<ul class="space-y-3">
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-green-500 text-sm mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<p class="font-body-md text-body-md text-on-surface">The sender's domain matches the SSL certificate registered to the parent corporation.</p>
+</li>
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-amber-500 text-sm mt-1" style="font-variation-settings: 'FILL' 1;">info</span>
+<p class="font-body-md text-body-md text-on-surface">Grammar and syntax scores exceed the 95th percentile for professional correspondence.</p>
+</li>
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-red-500 text-sm mt-1" style="font-variation-settings: 'FILL' 1;">warning</span>
+<p class="font-body-md text-body-md text-on-surface">High-pressure language detected: "Urgent response required within 2 hours."</p>
+</li>
+</ul>
+</div>
+<div class="p-6 rounded-2xl border-2 border-dashed border-outline-variant bg-surface-bright flex items-center justify-center">
+<p class="font-label-md text-label-md text-on-surface-variant italic">Transparent logic for confident decisions.</p>
+</div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Explainable AI: We show the "Why"</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Unlike black-box security tools, SafeConnect AI provides clear reasoning for every risk score. We empower you to understand the specific triggers that make a message or recruiter suspicious.</p>
+<div class="flex gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">visibility</span>
+<span class="font-label-md text-label-md font-bold">Total Transparency</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<span class="font-label-md text-label-md font-bold">Contextual Logic</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Community Intelligence -->
+<section class="px-margin-desktop py-24 bg-primary text-on-primary overflow-hidden relative">
+
+<div class="container mx-auto relative z-10">
+<div class="max-w-3xl">
+<h2 class="font-headline-lg text-headline-lg mb-6">Collective Community Intelligence</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-12">Every reported scam strengthens the network. When one user flags a fraudulent recruiter, the entire SafeConnect ecosystem is instantly protected through our real-time decentralized threat ledger.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div>
+<div class="text-3xl font-bold mb-2">500K+</div>
+<div class="text-on-primary-container font-label-sm text-label-sm uppercase">Protected Users</div>
+</div>
+<div>
+<div class="text-3xl font-bold mb-2">2.5M</div>
+<div class="text-on-primary-container font-label-sm text-label-sm uppercase">Scams Blocked</div>
+</div>
+<div>
+<div class="text-3xl font-bold mb-2">12ms</div>
+<div class="text-on-primary-container font-label-sm text-label-sm uppercase">Response Time</div>
+</div>
+<div>
+<div class="text-3xl font-bold mb-2">99.9%</div>
+<div class="text-on-primary-container font-label-sm text-label-sm uppercase">Accuracy Rate</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-margin-desktop py-24 bg-surface">
+<div class="container mx-auto text-center bg-surface-container rounded-[3rem] p-16 border border-outline-variant shadow-inner">
+<h2 class="font-display text-display text-primary mb-6">Ready for a safer job search?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">Join thousands of professionals who use SafeConnect AI to navigate their careers without the fear of recruitment fraud.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<a class="bg-primary text-on-primary px-12 py-5 rounded-2xl font-label-md text-label-md shadow-xl hover:scale-105 transition-all" href="register.html">Get the Extension</a>
+<a class="bg-white text-primary border border-outline-variant px-12 py-5 rounded-2xl font-label-md text-label-md hover:bg-surface-variant transition-all" href="dashboard.html">View Demo Dashboard</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container border-t border-outline-variant py-12 px-margin-desktop">
+<div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-gutter">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-base">
+<span class="material-symbols-outlined text-secondary">shield</span>
+<span class="font-label-md text-label-md font-bold text-primary">SafeConnect AI</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 SafeConnect AI. Protected by Advanced Cryptography.</p>
+</div>
+<div class="flex gap-gutter">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:underline" href="#">Security Badges</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:underline" href="scam-ledger.html">Community Reports</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:underline" href="#">Help Center</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-secondary cursor-pointer">public</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-secondary cursor-pointer">verified</span>
+</div>
+</div>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script>
+        SafeConnectUI.mountAuthSlot();
+
+        // Micro-interaction: Update Risk Gauge on hover
+        const gauge = document.querySelector('.risk-gauge');
+        if(gauge) {
+            gauge.parentElement.addEventListener('mouseenter', () => {
+                gauge.style.strokeDashoffset = '175'; // Simulate a change
+            });
+            gauge.parentElement.addEventListener('mouseleave', () => {
+                gauge.style.strokeDashoffset = '87.9';
+            });
+        }
+    </script>
+</body></html>

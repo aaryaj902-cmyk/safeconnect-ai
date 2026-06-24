@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Environment files (never commit secrets)
+.env
+
+# Local database
+*.db
+*.sqlite
+*.sqlite3
+
+# Trained ML model artifact (regenerated automatically on server startup)
+backend/app/ml/job_fraud_model.joblib
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

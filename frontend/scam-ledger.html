@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Scam Ledger | SafeConnect AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#dbe1ff",
+                        "surface-variant": "#d3e4fe",
+                        "surface-tint": "#565e74",
+                        "on-tertiary-fixed": "#271901",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#131b2e",
+                        "outline": "#76777d",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#dec29a",
+                        "inverse-primary": "#bec6e0",
+                        "primary-fixed-dim": "#bec6e0",
+                        "surface": "#f8f9ff",
+                        "outline-variant": "#c6c6cd",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#fefcff",
+                        "on-primary-container": "#7c839b",
+                        "on-tertiary-fixed-variant": "#574425",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "on-surface": "#0b1c30",
+                        "background": "#f8f9ff",
+                        "surface-bright": "#f8f9ff",
+                        "secondary-container": "#316bf3",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#b4c5ff",
+                        "on-background": "#0b1c30",
+                        "surface-container-high": "#dce9ff",
+                        "surface-container-highest": "#d3e4fe",
+                        "surface-container": "#e5eeff",
+                        "on-secondary-fixed": "#00174b",
+                        "tertiary": "#000000",
+                        "on-secondary-fixed-variant": "#003ea8",
+                        "on-surface-variant": "#45464d",
+                        "secondary": "#0051d5",
+                        "on-primary-fixed": "#131b2e",
+                        "primary": "#000000",
+                        "inverse-surface": "#213145",
+                        "primary-fixed": "#dae2fd",
+                        "on-tertiary-container": "#98805d",
+                        "tertiary-fixed": "#fcdeb5",
+                        "tertiary-container": "#271901",
+                        "surface-container-low": "#eff4ff",
+                        "surface-dim": "#cbdbf5",
+                        "on-primary-fixed-variant": "#3f465c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "display": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9ff; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+        .glass-shield { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(8px); border: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-0 h-full flex flex-col p-base z-40 bg-surface-container-lowest border-r border-outline-variant w-64 hidden md:flex">
+<div class="flex items-center gap-3 px-4 py-6 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">security</span>
+<div>
+<h1 class="font-display text-headline-md text-primary tracking-tight">SafeConnect</h1>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-widest text-[10px]">Sentinel AI</p>
+</div>
+</div>
+<nav class="flex-1 space-y-2 px-2">
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container transition-all rounded-xl font-label-md" href="dashboard.html">
+<span class="material-symbols-outlined">dashboard</span>
+                Dashboard
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container transition-all rounded-xl font-label-md" href="verification-hub.html">
+<span class="material-symbols-outlined">security_update_good</span>
+                Verification Hub
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container transition-all rounded-xl font-label-md" href="history.html">
+<span class="material-symbols-outlined">verified_user</span>
+                Scan History
+            </a>
+<a class="flex items-center gap-3 px-4 py-3 bg-secondary-container text-on-secondary-container rounded-xl font-semibold translate-x-1 transition-transform shadow-sm" href="scam-ledger.html">
+<span class="material-symbols-outlined">report_problem</span>
+                Scam Ledger
+            </a>
+</nav>
+<div class="px-2 mb-6">
+<a class="w-full bg-primary text-on-primary py-3 rounded-xl font-label-md hover:opacity-90 transition-opacity flex items-center justify-center gap-2" href="verification-hub.html?tab=job">
+<span class="material-symbols-outlined">add_link</span>
+                Scan URL
+            </a>
+</div>
+</aside>
+<main class="md:ml-64 min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="flex justify-between items-center px-margin-desktop h-16 w-full z-50 bg-surface border-b border-outline-variant sticky top-0">
+<div class="flex items-center gap-4 flex-1">
+<div class="relative w-full max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-full font-body-md focus:ring-2 focus:ring-secondary transition-all text-sm" id="ledger-search" placeholder="Search reported scammers or aliases..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden md:flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-low p-2 rounded-full cursor-pointer">notifications</span>
+</div>
+<div id="auth-slot"></div>
+</div>
+</header>
+<!-- Page Content -->
+<div class="p-margin-desktop flex-1">
+<!-- Simplified Header Section -->
+<section class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12">
+<div class="max-w-xl">
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-error-container text-error font-label-sm px-3 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">gpp_maybe</span> Live Intelligence
+                        </span>
+</div>
+<h2 class="font-display text-headline-lg text-primary mb-2">Community Scam Ledger</h2>
+<p class="font-body-md text-on-surface-variant">Real-time crowdsourced intelligence protecting the recruitment ecosystem.</p>
+</div>
+<div class="flex gap-4 w-full md:w-auto">
+<button class="flex-1 md:flex-none px-6 py-3 bg-error text-on-error rounded-xl font-label-md flex items-center justify-center gap-2 hover:bg-red-700 transition-colors shadow-sm" onclick="openReportModal()">
+<span class="material-symbols-outlined">report</span>
+                        Report a Scam
+                    </button>
+</div>
+</section>
+<!-- Success Stories & Metrics Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter mb-12">
+<!-- Recent Success Stories (New Section) -->
+<div class="col-span-1 md:col-span-2 bg-secondary text-on-secondary p-6 rounded-xl flex flex-col justify-between relative overflow-hidden">
+<div class="relative z-10">
+<span class="font-label-sm flex items-center gap-2 opacity-80 mb-2">
+<span class="material-symbols-outlined text-sm">auto_awesome</span> RECENT IMPACT
+                        </span>
+<div class="space-y-3" id="recent-impact-list">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-white animate-pulse"></div>
+<p class="font-body-md font-medium">Community ledger is live — recent activity will appear here.</p>
+</div>
+</div>
+</div>
+<span class="material-symbols-outlined absolute -right-4 -bottom-4 text-[120px] opacity-10">shield_check</span>
+</div>
+<div class="col-span-1 glass-shield p-6 rounded-xl flex flex-col justify-center text-center">
+<span class="text-on-surface-variant font-label-sm mb-1">TOTAL BLOCKED</span>
+<h3 class="text-headline-lg font-display text-primary" id="stat-total-blocked">--</h3>
+<p class="text-green-600 font-label-sm mt-1" id="stat-growth">--</p>
+</div>
+<!-- Contribute CTA (New Item) -->
+<div class="col-span-1 bg-surface-container-high border-2 border-dashed border-outline p-6 rounded-xl flex flex-col items-center justify-center text-center group cursor-pointer hover:bg-white hover:border-secondary transition-all" onclick="openReportModal()">
+<span class="material-symbols-outlined text-secondary text-3xl mb-2 group-hover:scale-110 transition-transform">add_moderator</span>
+<h4 class="font-label-md font-bold text-primary">Contribute Data</h4>
+<p class="text-xs text-on-surface-variant mt-1">Found a scam from a scan? Add it to the ledger.</p>
+</div>
+</div>
+<!-- Top Reported Scammers Table/List (New Section) -->
+<div class="mb-12">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline-md text-primary">Top Reported Scammers</h3>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm cursor-pointer hover:text-primary">
+<span class="material-symbols-outlined text-sm">filter_list</span> Filter
+                    </div>
+</div>
+<div class="bg-white border border-outline-variant rounded-xl overflow-hidden shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead class="bg-surface-container-low border-b border-outline-variant">
+<tr>
+<th class="px-6 py-4 font-label-sm text-on-surface-variant uppercase">Scammer/Alias</th>
+<th class="px-6 py-4 font-label-sm text-on-surface-variant uppercase">Violation Type</th>
+<th class="px-6 py-4 font-label-sm text-on-surface-variant uppercase">Risk Level</th>
+<th class="px-6 py-4 font-label-sm text-on-surface-variant uppercase">Reports</th>
+<th class="px-6 py-4 font-label-sm text-on-surface-variant uppercase text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant" id="scammers-table-body">
+<tr><td colspan="5" class="px-6 py-8 text-center text-on-surface-variant">Loading reports...</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Knowledge Base CTA -->
+<section class="mt-16 bg-primary-container text-on-primary rounded-2xl p-gutter relative overflow-hidden">
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-xl text-center md:text-left">
+<h4 class="font-display text-headline-md mb-2">How SafeConnect AI Protects You</h4>
+<p class="font-body-md opacity-80 mb-6">Our AI actively scans billions of data points to identify fraudulent patterns before they reach your inbox.</p>
+<button class="bg-secondary text-white px-8 py-3 rounded-xl font-label-md hover:scale-105 transition-transform">Read Security Whitepaper</button>
+</div>
+<div class="hidden lg:block w-72 h-48 rounded-xl bg-white/5 border border-white/10 p-4">
+<div class="flex flex-col gap-3">
+<div class="h-2 w-3/4 bg-white/20 rounded"></div>
+<div class="h-2 w-1/2 bg-white/20 rounded"></div>
+<div class="flex gap-2 mt-4">
+<div class="w-10 h-10 rounded-full border-2 border-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-xl">shield</span>
+</div>
+<div class="flex-1 space-y-2">
+<div class="h-2 w-full bg-secondary/30 rounded"></div>
+<div class="h-2 w-2/3 bg-secondary/30 rounded"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute right-0 top-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+</section>
+</div>
+<!-- Footer -->
+<footer class="w-full py-gutter px-margin-desktop flex flex-col md:flex-row justify-between items-center bg-surface-container-low border-t border-outline-variant mt-auto">
+<div class="flex items-center gap-2 mb-4 md:mb-0">
+<span class="font-display text-label-md font-bold text-primary">SafeConnect AI</span>
+<span class="text-on-surface-variant text-label-sm font-label-sm">© 2024 Sentinel Interface.</span>
+</div>
+<div class="flex gap-8">
+<a class="font-label-sm text-on-surface-variant hover:text-primary" href="#">Privacy</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary" href="#">Terms</a>
+<a class="font-label-sm text-on-surface-variant hover:text-primary" href="#">Whitepaper</a>
+</div>
+</footer>
+</main>
+<!-- Mobile Navigation -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-outline-variant px-6 py-3 flex justify-between items-center z-50">
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="dashboard.html">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="verification-hub.html">
+<span class="material-symbols-outlined">security_update_good</span>
+<span class="text-[10px] font-bold">Scan</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-secondary" href="scam-ledger.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">report_problem</span>
+<span class="text-[10px] font-bold">Ledger</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-on-surface-variant" href="login.html">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-[10px] font-bold">Profile</span>
+</a>
+</div>
+
+<!-- Report a Scam Modal -->
+<div class="fixed inset-0 bg-black/50 z-[100] hidden items-center justify-center p-4" id="report-modal">
+<div class="bg-white rounded-2xl max-w-lg w-full p-8 relative">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-primary" onclick="closeReportModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h3 class="font-display text-headline-md text-primary mb-1">Report a Scam</h3>
+<p class="text-on-surface-variant text-sm mb-6">Help protect the community by reporting a fraudulent recruiter or company.</p>
+<div class="space-y-4">
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant">Scammer / Alias Name *</label>
+<input class="w-full mt-1 border border-outline-variant rounded-xl p-3 focus:ring-2 focus:ring-secondary/30 focus:border-secondary" id="report-scammer-name" placeholder="e.g. John Recruiter" type="text"/>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant">Company / Context</label>
+<input class="w-full mt-1 border border-outline-variant rounded-xl p-3 focus:ring-2 focus:ring-secondary/30 focus:border-secondary" id="report-company-name" placeholder="e.g. Global Talent Solutions Inc." type="text"/>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant">Violation Type *</label>
+<select class="w-full mt-1 border border-outline-variant rounded-xl p-3 focus:ring-2 focus:ring-secondary/30 focus:border-secondary" id="report-violation-type">
+<option value="Resume Theft">Resume Theft</option>
+<option value="Advance Fee Fraud">Advance Fee Fraud</option>
+<option value="Phishing">Phishing</option>
+<option value="Identity Theft">Identity Theft</option>
+<option value="Check Fraud">Check Fraud</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant">Risk Level</label>
+<select class="w-full mt-1 border border-outline-variant rounded-xl p-3 focus:ring-2 focus:ring-secondary/30 focus:border-secondary" id="report-risk-level">
+<option value="suspicious">Suspicious</option>
+<option value="high_risk">High Risk</option>
+</select>
+</div>
+<div>
+<label class="font-label-md text-label-md text-on-surface-variant">Description</label>
+<textarea class="w-full mt-1 border border-outline-variant rounded-xl p-3 min-h-[100px] focus:ring-2 focus:ring-secondary/30 focus:border-secondary" id="report-description" placeholder="Describe what happened..."></textarea>
+</div>
+<button class="w-full bg-error text-on-error py-3 rounded-xl font-label-md hover:bg-red-700 transition-colors" id="report-submit-btn" onclick="submitReport()">
+                    Submit Report
+                </button>
+</div>
+</div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script>
+    function openReportModal() {
+        document.getElementById('report-modal').classList.remove('hidden');
+        document.getElementById('report-modal').classList.add('flex');
+    }
+    function closeReportModal() {
+        document.getElementById('report-modal').classList.add('hidden');
+        document.getElementById('report-modal').classList.remove('flex');
+    }
+
+    async function submitReport() {
+        const btn = document.getElementById('report-submit-btn');
+        const scammer_name = document.getElementById('report-scammer-name').value.trim();
+        const company_name = document.getElementById('report-company-name').value.trim();
+        const violation_type = document.getElementById('report-violation-type').value;
+        const risk_level = document.getElementById('report-risk-level').value;
+        const description = document.getElementById('report-description').value.trim();
+
+        if (!scammer_name) {
+            SafeConnectUI.showToast('Please enter a scammer name.', 'error');
+            return;
+        }
+
+        btn.disabled = true;
+        btn.textContent = 'Submitting...';
+        try {
+            await SafeConnectAPI.createReport({
+                scammer_name, company_name: company_name || null, violation_type, risk_level, description: description || null,
+            });
+            SafeConnectUI.showToast('Report submitted. Thank you for protecting the community.', 'success');
+            closeReportModal();
+            loadLedger();
+        } catch (err) {
+            SafeConnectUI.showToast(err.message, 'error');
+        } finally {
+            btn.disabled = false;
+            btn.textContent = 'Submit Report';
+        }
+    }
+
+    const RISK_BADGE = {
+        high_risk: 'bg-error-container text-error',
+        suspicious: 'bg-amber-100 text-amber-700',
+    };
+    const RISK_LABEL = { high_risk: 'High Risk', suspicious: 'Suspicious' };
+    const VIOLATION_ICON = {
+        'Resume Theft': 'content_copy', 'Advance Fee Fraud': 'payments', 'Phishing': 'alternate_email',
+        'Phishing Link Distribution': 'alternate_email', 'Identity Theft': 'badge', 'Check Fraud': 'receipt_long',
+    };
+
+    function initials(name) {
+        return name.split(' ').filter(Boolean).slice(0, 2).map(w => w[0].toUpperCase()).join('');
+    }
+
+    function renderScammersTable(reports) {
+        const tbody = document.getElementById('scammers-table-body');
+        if (!reports || reports.length === 0) {
+            tbody.innerHTML = `<tr><td colspan="5" class="px-6 py-8 text-center text-on-surface-variant">No reports yet. Be the first to report a scam.</td></tr>`;
+            return;
+        }
+        tbody.innerHTML = reports.map(r => {
+            const badgeClass = RISK_BADGE[r.risk_level] || RISK_BADGE.suspicious;
+            const icon = VIOLATION_ICON[r.violation_type] || 'report';
+            const avatarClass = r.risk_level === 'high_risk' ? 'bg-error-container text-error' : 'bg-amber-100 text-amber-700';
+            return `
+            <tr class="hover:bg-surface-container-lowest transition-colors">
+                <td class="px-6 py-5">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full ${avatarClass} flex items-center justify-center font-bold text-xs">${SafeConnectUI.escapeHtml(initials(r.scammer_name))}</div>
+                        <div>
+                            <p class="font-label-md font-bold text-primary">${SafeConnectUI.escapeHtml(r.scammer_name)}</p>
+                            <p class="text-[11px] text-on-surface-variant">${SafeConnectUI.escapeHtml(r.company_name || 'Unknown affiliation')}</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="px-6 py-5">
+                    <span class="font-label-md text-primary flex items-center gap-1">
+                        <span class="material-symbols-outlined text-sm">${icon}</span> ${SafeConnectUI.escapeHtml(r.violation_type)}
+                    </span>
+                </td>
+                <td class="px-6 py-5">
+                    <span class="${badgeClass} text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">${RISK_LABEL[r.risk_level] || r.risk_level}</span>
+                </td>
+                <td class="px-6 py-5 font-label-md text-on-surface">${r.confirmations} Users</td>
+                <td class="px-6 py-5 text-right">
+                    <button class="text-secondary font-label-sm hover:underline" onclick='alert(${JSON.stringify((r.ai_reasoning || "No additional evidence on file.").replace(/'/g, ""))})'>Evidence</button>
+                </td>
+            </tr>`;
+        }).join('');
+    }
+
+    function renderRecentImpact(reports) {
+        const list = document.getElementById('recent-impact-list');
+        if (!reports || reports.length === 0) return;
+        const top = reports.slice(0, 2);
+        list.innerHTML = top.map((r, i) => `
+            <div class="flex items-center gap-3">
+                <div class="w-2 h-2 rounded-full bg-white ${i === 0 ? 'animate-pulse' : 'opacity-40'}"></div>
+                <p class="font-body-md font-medium">${r.confirmations}+ users reported '${SafeConnectUI.escapeHtml(r.scammer_name)}' for ${SafeConnectUI.escapeHtml(r.violation_type.toLowerCase())}.</p>
+            </div>`).join('');
+    }
+
+    async function loadLedger() {
+        try {
+            const [reports, stats] = await Promise.all([
+                SafeConnectAPI.listReports({ sort: 'top', limit: 25 }),
+                SafeConnectAPI.ledgerStats(),
+            ]);
+            renderScammersTable(reports);
+            renderRecentImpact(reports);
+            document.getElementById('stat-total-blocked').textContent = stats.total_scams_blocked.toLocaleString();
+            document.getElementById('stat-growth').textContent = `+${stats.monthly_growth_pct}% month`;
+        } catch (err) {
+            SafeConnectUI.showToast(err.message, 'error');
+            renderScammersTable([]);
+        }
+    }
+
+    let searchDebounce;
+    document.getElementById('ledger-search').addEventListener('input', (e) => {
+        clearTimeout(searchDebounce);
+        const q = e.target.value.trim();
+        searchDebounce = setTimeout(async () => {
+            try {
+                const reports = await SafeConnectAPI.listReports(q ? { q, sort: 'top' } : { sort: 'top' });
+                renderScammersTable(reports);
+            } catch (err) {
+                SafeConnectUI.showToast(err.message, 'error');
+            }
+        }, 300);
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        SafeConnectUI.mountAuthSlot();
+        loadLedger();
+    });
+</script>
+</body></html>

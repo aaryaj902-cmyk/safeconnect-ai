@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Scan History | SafeConnect AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: "#0f172a", secondary: "#2563eb", error: "#ba1a1a",
+          "error-container": "#ffdad6", "on-error-container": "#93000a",
+          "surface": "#f8fafc", "surface-container-lowest": "#ffffff", "surface-container-low": "#eff4ff",
+          "outline-variant": "#e2e8f0", "on-surface-variant": "#45464d",
+        },
+      },
+    },
+  }
+</script>
+<style>
+  body { font-family: 'Inter', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+</style>
+</head>
+<body class="bg-surface text-primary">
+<!-- SideNavBar -->
+<aside class="bg-surface-container-low h-screen w-64 fixed left-0 top-0 border-r border-outline-variant flex flex-col p-6 z-50">
+<div class="mb-10 flex items-center gap-3">
+<div class="bg-primary p-2 rounded-xl">
+<span class="material-symbols-outlined text-white">security</span>
+</div>
+<div>
+<h1 class="text-lg font-bold text-primary">SafeConnect AI</h1>
+<p class="text-xs text-on-surface-variant opacity-70">Precision Protection</p>
+</div>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-white transition-colors rounded-xl" href="dashboard.html">
+<span class="material-symbols-outlined">dashboard</span><span class="text-sm font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-white transition-colors rounded-xl" href="verification-hub.html">
+<span class="material-symbols-outlined">verified_user</span><span class="text-sm font-medium">Verification Hub</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-white transition-colors rounded-xl" href="scam-ledger.html">
+<span class="material-symbols-outlined">policy</span><span class="text-sm font-medium">Scam Ledger</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 bg-secondary text-white font-bold rounded-xl" href="history.html">
+<span class="material-symbols-outlined">history</span><span class="text-sm font-medium">Scan History</span>
+</a>
+</nav>
+</aside>
+
+<div class="ml-64 flex flex-col min-h-screen">
+<header class="bg-white flex items-center justify-between h-16 px-10 sticky top-0 border-b border-outline-variant z-40">
+<span class="text-sm font-medium text-on-surface-variant">Scan History</span>
+<div id="auth-slot"></div>
+</header>
+
+<main class="p-10 flex-1">
+<div class="max-w-5xl mx-auto">
+<div class="flex items-center justify-between mb-8">
+<div>
+<h2 class="text-3xl font-bold mb-1">Scan History</h2>
+<p class="text-on-surface-variant">All verification scans you've run, most recent first.</p>
+</div>
+<div class="flex gap-2">
+<select class="border border-outline-variant rounded-xl px-4 py-2 text-sm" id="filter-type">
+<option value="">All Types</option>
+<option value="profile">Recruiter Profile</option>
+<option value="message">Message</option>
+<option value="job">Job Listing</option>
+<option value="link">Link</option>
+</select>
+</div>
+</div>
+
+<div class="space-y-3" id="history-list">
+<p class="text-on-surface-variant text-sm">Loading...</p>
+</div>
+</div>
+</main>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script>
+  const TYPE_LABEL = { profile: 'Recruiter Profile', message: 'Message', job: 'Job Listing', link: 'Link' };
+  const TYPE_ICON = { profile: 'person', message: 'chat', job: 'work', link: 'link' };
+
+  let allScans = [];
+
+  function renderHistory() {
+    const filter = document.getElementById('filter-type').value;
+    const list = document.getElementById('history-list');
+    const filtered = filter ? allScans.filter(s => s.scan_type === filter) : allScans;
+
+    if (filtered.length === 0) {
+      list.innerHTML = `<div class="text-center py-16 bg-white border border-outline-variant rounded-2xl">
+        <span class="material-symbols-outlined text-4xl text-on-surface-variant mb-2 block">history</span>
+        <p class="text-on-surface-variant mb-4">No scans found.</p>
+        <a href="verification-hub.html" class="inline-block bg-primary text-white px-6 py-2.5 rounded-xl font-semibold hover:opacity-90">Run a Scan</a>
+      </div>`;
+      return;
+    }
+
+    list.innerHTML = filtered.map(scan => {
+      const meta = SafeConnectUI.riskMeta(scan.risk_level);
+      return `
+      <div class="bg-white border border-outline-variant rounded-xl p-5 flex items-center justify-between gap-4 hover:shadow-sm transition-all">
+        <div class="flex items-center gap-4 min-w-0">
+          <div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-on-surface-variant">${TYPE_ICON[scan.scan_type] || 'search'}</span>
+          </div>
+          <div class="min-w-0">
+            <p class="font-bold truncate">${SafeConnectUI.escapeHtml(scan.subject_name || 'Untitled scan')}</p>
+            <p class="text-xs text-on-surface-variant">${TYPE_LABEL[scan.scan_type] || scan.scan_type} • ${SafeConnectUI.timeAgo(scan.created_at)}${scan.subject_company ? ' • ' + SafeConnectUI.escapeHtml(scan.subject_company) : ''}</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 shrink-0">
+          <div class="text-right hidden sm:block">
+            <p class="font-bold">${scan.trust_score}/100</p>
+            <p class="text-xs text-on-surface-variant">${SafeConnectUI.escapeHtml(scan.verdict_label)}</p>
+          </div>
+          ${SafeConnectUI.riskBadgeHtml(scan.risk_level, scan.risk_level === 'high_risk' ? 'High Risk' : scan.risk_level === 'verify' ? 'Verify' : 'Safe')}
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  async function loadHistory() {
+    try {
+      allScans = await SafeConnectAPI.scanHistory(100);
+      renderHistory();
+    } catch (err) {
+      SafeConnectUI.showToast(err.message, 'error');
+      document.getElementById('history-list').innerHTML = `<p class="text-error text-sm">${SafeConnectUI.escapeHtml(err.message)}</p>`;
+    }
+  }
+
+  document.getElementById('filter-type').addEventListener('change', renderHistory);
+
+  document.addEventListener('DOMContentLoaded', () => {
+    SafeConnectUI.mountAuthSlot();
+    loadHistory();
+  });
+</script>
+</body></html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SafeConnect AI | Sentinel Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#dec29a",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#b4c5ff",
+                    "secondary-container": "#316bf3",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-secondary-fixed-variant": "#003ea8",
+                    "surface-bright": "#f8f9ff",
+                    "secondary-fixed": "#dbe1ff",
+                    "on-background": "#0b1c30",
+                    "inverse-primary": "#bec6e0",
+                    "tertiary": "#000000",
+                    "surface-container-high": "#dce9ff",
+                    "outline": "#76777d",
+                    "on-surface-variant": "#45464d",
+                    "surface-variant": "#d3e4fe",
+                    "primary-fixed": "#dae2fd",
+                    "surface-tint": "#565e74",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#eff4ff",
+                    "outline-variant": "#c6c6cd",
+                    "surface-container-highest": "#d3e4fe",
+                    "surface": "#f8f9ff",
+                    "on-error": "#ffffff",
+                    "primary-container": "#131b2e",
+                    "primary": "#000000",
+                    "tertiary-container": "#271901",
+                    "on-primary-container": "#7c839b",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "on-tertiary-fixed-variant": "#574425",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-tertiary-fixed": "#271901",
+                    "surface-container": "#e5eeff",
+                    "on-tertiary-container": "#98805d",
+                    "background": "#f8f9ff",
+                    "surface-dim": "#cbdbf5",
+                    "on-secondary-container": "#fefcff",
+                    "secondary": "#0051d5",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#00174b",
+                    "on-primary-fixed": "#131b2e",
+                    "inverse-surface": "#213145",
+                    "tertiary-fixed": "#fcdeb5",
+                    "on-surface": "#0b1c30"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "40px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .safety-meter-svg {
+            transform: rotate(-90deg);
+        }
+        .risk-glow-red {
+            box-shadow: inset 0 0 12px rgba(239, 68, 68, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- Side Navigation Bar -->
+<aside class="h-screen w-64 fixed left-0 top-0 bg-surface-container-low border-r border-outline-variant flex flex-col p-gutter z-50">
+<div class="mb-10 flex items-center gap-3">
+<div class="bg-primary p-2 rounded-xl">
+<span class="material-symbols-outlined text-on-primary">security</span>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary">SafeConnect AI</h1>
+<p class="text-label-sm font-label-sm text-on-surface-variant opacity-70">Sentinel Interface</p>
+</div>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center gap-3 px-4 py-3 bg-secondary-container text-on-secondary-container font-bold rounded-xl transition-transform active:scale-95" href="dashboard.html">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-label-md text-label-md">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant transition-colors duration-200 rounded-xl" href="verification-hub.html">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+<span class="font-label-md text-label-md">Verification Hub</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant transition-colors duration-200 rounded-xl" href="scam-ledger.html">
+<span class="material-symbols-outlined" data-icon="policy">policy</span>
+<span class="font-label-md text-label-md">Scam Ledger</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-variant transition-colors duration-200 rounded-xl" href="history.html">
+<span class="material-symbols-outlined" data-icon="settings">history</span>
+<span class="font-label-md text-label-md">Scan History</span>
+</a>
+</nav>
+<div class="mt-auto pt-6 border-t border-outline-variant">
+<div class="flex items-center gap-3 px-2">
+<div class="w-10 h-10 rounded-full border-2 border-surface-container-high bg-secondary-container flex items-center justify-center text-on-secondary-container font-bold" id="sidebar-avatar">?</div>
+<div class="overflow-hidden">
+<p class="font-label-md text-label-md font-bold truncate" id="sidebar-username">Guest</p>
+<p class="text-label-sm text-on-surface-variant truncate" id="sidebar-plan">Free Protection</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Top App Bar -->
+<header class="flex items-center justify-between h-16 px-margin-desktop ml-64 bg-surface-bright border-b border-outline-variant sticky top-0 z-40">
+<div class="flex items-center gap-4">
+<h2 class="font-headline-md text-headline-md font-extrabold text-primary" id="dashboard-greeting">Good morning</h2>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2 bg-green-50 px-3 py-1.5 rounded-full border border-green-100">
+<span class="material-symbols-outlined text-[18px] text-green-600">sync</span>
+<span class="font-label-sm text-label-sm text-green-700">Sentinel Active</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:text-secondary transition-colors duration-300">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<div id="auth-slot"></div>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="ml-64 p-margin-desktop bg-surface-bright min-h-[calc(100vh-64px)]">
+<div class="max-w-[1400px] mx-auto space-y-gutter">
+<!-- Quick Verify: Unified Scanner -->
+<section class="bg-primary text-on-primary rounded-xl p-8 shadow-xl">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1">
+<h3 class="font-headline-lg text-headline-lg mb-2">Unified Verification Hub</h3>
+<p class="text-on-primary/70 font-body-md mb-6 max-w-xl">Instantly analyze recruiters, emails, or links using our multi-vector AI engine. Secure your professional identity in seconds.</p>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary">shield</span>
+<input class="w-full pl-12 pr-32 py-4 bg-white text-primary rounded-xl border-none focus:ring-4 focus:ring-secondary/30 text-body-md placeholder:text-outline" id="quick-scan-input" placeholder="Paste recruiter name, email address, or job link here..." type="text"/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 bg-secondary text-on-secondary px-6 py-2 rounded-lg font-bold hover:bg-secondary/90 transition-all" onclick="goToVerificationHub()">
+                            Run Deep Scan
+                        </button>
+</div>
+</div>
+<div class="hidden lg:flex gap-4">
+<div class="flex flex-col items-center gap-2 px-4 py-3 bg-white/10 rounded-xl">
+<span class="material-symbols-outlined">verified_user</span>
+<span class="text-label-sm">Recruiters</span>
+</div>
+<div class="flex flex-col items-center gap-2 px-4 py-3 bg-white/10 rounded-xl">
+<span class="material-symbols-outlined">mail_lock</span>
+<span class="text-label-sm">Messages</span>
+</div>
+<div class="flex flex-col items-center gap-2 px-4 py-3 bg-white/10 rounded-xl">
+<span class="material-symbols-outlined">link_off</span>
+<span class="text-label-sm">Links</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Safety Overview -->
+<div class="grid grid-cols-12 gap-gutter">
+<!-- Global Safety Score Bento -->
+<div class="col-span-12 lg:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-xl p-8 relative overflow-hidden group">
+<div class="flex flex-col md:flex-row items-center gap-12 relative z-10">
+<div class="relative w-48 h-48">
+<svg class="w-full h-full safety-meter-svg" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="transparent" r="42" stroke="#E2E8F0" stroke-width="8"></circle>
+<circle class="transition-all duration-1000" cx="50" cy="50" fill="transparent" id="safety-gauge-circle" r="42" stroke="#16A34A" stroke-dasharray="263.89" stroke-dashoffset="47.5" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-headline-lg text-headline-lg text-primary" id="safety-score-value">82</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="safety-score-label">SAFE</span>
+</div>
+</div>
+<div class="flex-1">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-green-50 text-green-700 rounded-full mb-4 border border-green-100">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-label-sm font-label-sm" id="system-health-label">Global Safety Overview</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2" id="safety-headline">Systems Clear</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6 max-w-lg" id="safety-description">Your digital footprint is well-protected. We've neutralized 12 threats this week across your LinkedIn and Gmail communications.</p>
+<div class="flex gap-4">
+<a class="bg-primary text-on-primary py-2.5 px-6 rounded-xl font-label-md text-label-md hover:opacity-90 transition-all shadow-sm" href="verification-hub.html">Analysis Report</a>
+<a class="bg-surface-container-highest text-primary py-2.5 px-6 rounded-xl font-label-md text-label-md hover:bg-surface-variant transition-all border border-outline-variant/30" href="history.html">Scan History</a>
+</div>
+</div>
+</div>
+<div class="absolute -right-12 -bottom-12 opacity-5 pointer-events-none group-hover:scale-110 transition-transform duration-700">
+<span class="material-symbols-outlined text-[240px]">security</span>
+</div>
+</div>
+<!-- Top Community Alerts -->
+<div class="col-span-12 lg:col-span-4 bg-surface-container-lowest border border-outline-variant rounded-xl p-6">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-label-md text-label-md font-bold uppercase tracking-wider text-on-surface-variant">Community Alerts</h3>
+<span class="material-symbols-outlined text-secondary">trending_up</span>
+</div>
+<div class="space-y-4" id="community-alerts-list">
+<div class="p-4 bg-surface-container-low rounded-xl border-l-4 border-error">
+<div class="flex justify-between items-start mb-1">
+<p class="font-label-md text-label-md font-bold">Fake "Upwork" Payments</p>
+<span class="text-label-sm text-error">+12%</span>
+</div>
+<p class="text-label-sm text-on-surface-variant leading-snug">Malware-embedded PDF "contracts" trending in freelance networks.</p>
+</div>
+<div class="p-4 bg-surface-container-low rounded-xl border-l-4 border-orange-400">
+<div class="flex justify-between items-start mb-1">
+<p class="font-label-md text-label-md font-bold">LinkedIn Ghosting Phish</p>
+<span class="text-label-sm text-orange-500">+8%</span>
+</div>
+<p class="text-label-sm text-on-surface-variant leading-snug">Requests for "Identity Verification" using external links.</p>
+</div>
+<div class="p-4 bg-surface-container-low rounded-xl border-l-4 border-blue-400">
+<div class="flex justify-between items-start mb-1">
+<p class="font-label-md text-label-md font-bold">Remote Setup Scams</p>
+<span class="text-label-sm text-blue-500">+2%</span>
+</div>
+<p class="text-label-sm text-on-surface-variant leading-snug">Fraudulent equipment reimbursement checks via crypto.</p>
+</div>
+</div>
+<button class="w-full mt-6 text-secondary font-label-sm text-label-sm font-bold flex items-center justify-center gap-1 hover:underline" onclick="window.location.href='scam-ledger.html'">
+                    View Scam Ledger <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Unified Scan History -->
+<div class="col-span-12">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline-md text-headline-md">Verification History</h3>
+<a class="text-on-surface-variant font-label-md text-label-md flex items-center gap-1 hover:text-primary transition-colors" href="history.html">
+                        View All Activity <span class="material-symbols-outlined text-[18px]">filter_list</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter" id="recent-scans-grid">
+<p class="text-on-surface-variant text-sm col-span-3">Loading recent scans...</p>
+</div>
+</div>
+<!-- Reasoning Engine -->
+<div class="col-span-12 grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-8 flex flex-col gap-4">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase tracking-widest">AI Reasoning Engine</span>
+<h3 class="font-headline-lg text-headline-lg">Active Sentinel Defense</h3>
+<p class="text-body-md text-on-surface-variant">SafeConnect AI analyzes linguistic patterns, cross-references metadata with 400+ known fraud vectors, and validates underlying blockchain link destinations in real-time.</p>
+<div class="mt-4 flex flex-wrap gap-3">
+<span class="px-3 py-1.5 bg-surface-container rounded-full text-label-sm border border-outline-variant/30">Natural Language Analysis</span>
+<span class="px-3 py-1.5 bg-surface-container rounded-full text-label-sm border border-outline-variant/30">Metadata Fingerprinting</span>
+<span class="px-3 py-1.5 bg-surface-container rounded-full text-label-sm border border-outline-variant/30">Real-time URL Sandboxing</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden min-h-[300px]">
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCAZGJl3zlnKZeRgO_wL67t3ULdutMVXmB_SWTGD1tugcErNyj72Dk05flSXaeA3EdSWvlVD01LxAYMKYMF8po1L-g4F1REW5xTk3zpNt4bRaheg7q3beNyrP8pGobiznnkjjwt33Q9IFhd5v0pTrbVjO9pG6u0wQJ-o6VqOiz54Z0mEqG4NaAaz0j-7_3-HiL9HwnogdbnIZrdAVFgVOhbtL5OwX3g3RISedZxBGKwXS8UjEw_0S8hn08FpeqVK09K8ItR6l9sviVA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+<p class="text-white font-headline-md text-headline-md leading-tight mb-2">Enabled: Multi-Portal Protection</p>
+<p class="text-white/80 text-label-md">Sentinel is monitoring LinkedIn, Gmail, and XHub portals.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Component -->
+<footer class="flex flex-row justify-between items-center py-6 px-margin-desktop ml-64 bg-surface-container-lowest border-t border-outline-variant">
+<div class="flex items-center gap-6">
+<span class="font-label-sm text-label-sm font-bold text-primary">SafeConnect AI</span>
+<div class="flex gap-4">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:underline" href="#">Security Badges</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:underline" href="scam-ledger.html">Community Reports</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:underline" href="#">Help Center</a>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 SafeConnect AI. Protected by Sentinel Cryptography.</p>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script>
+    function goToVerificationHub() {
+        const value = document.getElementById('quick-scan-input').value.trim();
+        const params = new URLSearchParams();
+        if (value) {
+            // Heuristic: looks like a URL -> link scanner isn't a hub tab, default to profile w/ name
+            params.set('q', value);
+            params.set('tab', 'profile');
+        }
+        window.location.href = 'verification-hub.html' + (params.toString() ? '?' + params.toString() : '');
+    }
+
+    const RISK_CARD_META = {
+        high_risk: {
+            border: 'border-t-error', iconBg: 'bg-red-50', iconColor: 'text-error', icon: 'warning',
+            badge: 'bg-red-100 text-red-700', badgeIcon: 'dangerous', badgeLabel: 'HIGH RISK',
+            glow: 'risk-glow-red', btn: 'bg-error text-on-error hover:bg-red-700', btnLabel: 'View Details',
+        },
+        safe: {
+            border: 'border-t-green-500', iconBg: 'bg-green-50', iconColor: 'text-green-600', icon: 'verified',
+            badge: 'bg-green-100 text-green-700', badgeIcon: 'check_circle', badgeLabel: 'SAFE',
+            glow: '', btn: 'bg-surface-container-highest text-primary border border-outline-variant/30 hover:bg-surface-variant', btnLabel: 'View Details',
+        },
+        verify: {
+            border: 'border-t-amber-400', iconBg: 'bg-amber-50', iconColor: 'text-amber-600', icon: 'contact_support',
+            badge: 'bg-amber-100 text-amber-700', badgeIcon: 'priority_high', badgeLabel: 'VERIFY',
+            glow: '', btn: 'bg-surface-container-highest text-primary border border-outline-variant/30 hover:bg-surface-variant', btnLabel: 'Run Deep Scan',
+        },
+    };
+
+    function renderRecentScans(scans) {
+        const grid = document.getElementById('recent-scans-grid');
+        if (!scans || scans.length === 0) {
+            grid.innerHTML = `<div class="col-span-3 text-center py-10 text-on-surface-variant">
+                <p class="mb-4">No scans yet. Run your first verification to see it here.</p>
+                <a href="verification-hub.html" class="inline-block bg-primary text-on-primary px-6 py-2.5 rounded-xl font-label-md text-label-md hover:opacity-90">Go to Verification Hub</a>
+            </div>`;
+            return;
+        }
+        grid.innerHTML = scans.map(scan => {
+            const meta = RISK_CARD_META[scan.risk_level] || RISK_CARD_META.verify;
+            const title = scan.subject_name || scan.scan_type;
+            const sourceLabel = { profile: 'Recruiter Profile', message: 'Message', job: 'Job Listing', link: 'Link' }[scan.scan_type] || scan.scan_type;
+            return `
+            <div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-5 hover:shadow-lg transition-all ${meta.glow} border-t-4 ${meta.border}">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="${meta.iconBg} p-2 rounded-lg">
+                        <span class="material-symbols-outlined ${meta.iconColor}" style="font-variation-settings: 'FILL' 1;">${meta.icon}</span>
+                    </div>
+                    <span class="px-2.5 py-1 ${meta.badge} text-label-sm font-bold rounded-full flex items-center gap-1">
+                        <span class="material-symbols-outlined text-[14px]">${meta.badgeIcon}</span> ${meta.badgeLabel}
+                    </span>
+                </div>
+                <h4 class="font-headline-md text-headline-md !text-[18px] mb-1">${SafeConnectUI.escapeHtml(title)}</h4>
+                <p class="text-label-sm text-on-surface-variant mb-6">${sourceLabel} • ${SafeConnectUI.timeAgo(scan.created_at)}</p>
+                <p class="text-label-sm text-on-surface-variant mb-6">Trust Score: <strong>${scan.trust_score}/100</strong> — ${SafeConnectUI.escapeHtml(scan.verdict_label)}</p>
+                <a href="verification-hub.html" class="block text-center w-full py-2 ${meta.btn} rounded-lg font-label-md text-label-md transition-colors">${meta.btnLabel}</a>
+            </div>`;
+        }).join('');
+    }
+
+    function renderCommunityTrends(trends) {
+        const list = document.getElementById('community-alerts-list');
+        if (!trends || trends.length === 0) return;
+        const colors = ['border-error text-error', 'border-orange-400 text-orange-500', 'border-blue-400 text-blue-500'];
+        list.innerHTML = trends.map((t, i) => `
+            <div class="p-4 bg-surface-container-low rounded-xl border-l-4 ${colors[i % colors.length].split(' ')[0]}">
+                <div class="flex justify-between items-start mb-1">
+                    <p class="font-label-md text-label-md font-bold">${SafeConnectUI.escapeHtml(t.title)}</p>
+                    <span class="text-label-sm ${colors[i % colors.length].split(' ')[1]}">+${t.change_pct}%</span>
+                </div>
+                <p class="text-label-sm text-on-surface-variant leading-snug">${SafeConnectUI.escapeHtml(t.detail)}</p>
+            </div>`).join('');
+    }
+
+    function updateSafetyGauge(score, health) {
+        const circumference = 2 * Math.PI * 42; // ~263.89, matches r=42 in markup
+        const offset = circumference * (1 - score / 100);
+        const circle = document.getElementById('safety-gauge-circle');
+        const color = score >= 70 ? '#16A34A' : score >= 40 ? '#D97706' : '#BA1A1A';
+        circle.style.stroke = color;
+        circle.style.strokeDashoffset = offset.toFixed(2);
+        document.getElementById('safety-score-value').textContent = score;
+        document.getElementById('safety-score-label').textContent =
+            score >= 70 ? 'SAFE' : score >= 40 ? 'CAUTION' : 'AT RISK';
+        document.getElementById('safety-headline').textContent =
+            health === 'Excellent' ? 'Systems Clear' : health === 'Fair' ? 'Some Caution Advised' : 'Action Recommended';
+    }
+
+    async function loadDashboard() {
+        try {
+            const data = await SafeConnectAPI.getDashboard();
+            updateSafetyGauge(data.overall_safety_score, data.system_health);
+            document.getElementById('safety-description').textContent =
+                `Your digital footprint is being actively monitored. We've flagged ${data.threats_neutralized_week} high-risk item(s) across your recent scans.`;
+            renderRecentScans(data.recent_scans);
+            renderCommunityTrends(data.community_trends);
+        } catch (err) {
+            SafeConnectUI.showToast(err.message, 'error');
+            renderRecentScans([]);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        SafeConnectUI.mountAuthSlot();
+        const user = SafeConnectAPI.getUser();
+        const hour = new Date().getHours();
+        const greeting = hour < 12 ? 'Good morning' : hour < 18 ? 'Good afternoon' : 'Good evening';
+        document.getElementById('dashboard-greeting').textContent = user ? `${greeting}, ${user.full_name.split(' ')[0]}` : `${greeting}`;
+        document.getElementById('sidebar-username').textContent = user ? user.full_name : 'Guest';
+        document.getElementById('sidebar-plan').textContent = user ? (user.plan === 'pro' ? 'Pro Protection' : 'Free Protection') : 'Not logged in';
+        document.getElementById('sidebar-avatar').textContent = user ? user.full_name.charAt(0).toUpperCase() : '?';
+
+        loadDashboard();
+    });
+
+    document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('mousedown', () => {
+            el.classList.add('scale-95');
+            setTimeout(() => el.classList.remove('scale-95'), 150);
+        });
+    });
+</script>
+</body></html>

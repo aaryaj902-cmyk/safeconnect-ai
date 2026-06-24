@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Log In | SafeConnect AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: "#0f172a", secondary: "#2563eb", error: "#ba1a1a",
+          "error-container": "#ffdad6", "on-error-container": "#93000a",
+          "surface": "#f8fafc", "surface-container-lowest": "#ffffff",
+          "outline-variant": "#e2e8f0", "on-surface-variant": "#45464d",
+        },
+      },
+    },
+  }
+</script>
+<style>
+  body { font-family: 'Inter', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; vertical-align: middle; }
+</style>
+</head>
+<body class="bg-surface text-primary min-h-screen flex items-center justify-center p-6">
+<div class="w-full max-w-md">
+<div class="flex items-center justify-center gap-3 mb-8">
+<div class="bg-primary p-2 rounded-xl">
+<span class="material-symbols-outlined text-white">security</span>
+</div>
+<div>
+<h1 class="text-xl font-bold text-primary">SafeConnect AI</h1>
+<p class="text-xs text-on-surface-variant opacity-70 uppercase tracking-widest">Precision Protection</p>
+</div>
+</div>
+
+<div class="bg-surface-container-lowest border border-outline-variant rounded-2xl p-8 shadow-sm">
+<h2 class="text-2xl font-bold mb-1">Welcome back</h2>
+<p class="text-on-surface-variant text-sm mb-6">Log in to access your dashboard and scan history.</p>
+
+<div id="error-banner" class="hidden mb-4 p-3 bg-error-container text-on-error-container rounded-xl text-sm"></div>
+
+<form id="login-form" class="space-y-4">
+<div>
+<label class="text-sm font-medium text-on-surface-variant">Email</label>
+<input class="w-full mt-1 border border-outline-variant rounded-xl p-3 focus:ring-2 focus:ring-secondary/30 focus:border-secondary outline-none transition-all" id="email" placeholder="you@example.com" required type="email"/>
+</div>
+<div>
+<label class="text-sm font-medium text-on-surface-variant">Password</label>
+<input class="w-full mt-1 border border-outline-variant rounded-xl p-3 focus:ring-2 focus:ring-secondary/30 focus:border-secondary outline-none transition-all" id="password" placeholder="••••••••" required type="password"/>
+</div>
+<button class="w-full bg-primary text-white py-3 rounded-xl font-semibold hover:opacity-90 transition-all flex items-center justify-center gap-2" id="login-btn" type="submit">
+<span class="material-symbols-outlined text-[20px]">login</span> Log In
+</button>
+</form>
+
+<p class="text-center text-sm text-on-surface-variant mt-6">
+  Don't have an account? <a class="text-secondary font-semibold hover:underline" href="register.html">Sign up</a>
+</p>
+</div>
+
+<p class="text-center text-xs text-on-surface-variant mt-6">
+  <a class="hover:underline" href="dashboard.html">Continue without an account →</a>
+</p>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script>
+  if (SafeConnectAPI.isLoggedIn()) {
+    window.location.href = 'dashboard.html';
+  }
+
+  document.getElementById('login-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById('login-btn');
+    const errorBanner = document.getElementById('error-banner');
+    errorBanner.classList.add('hidden');
+
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
+
+    btn.disabled = true;
+    btn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span> Logging in...';
+    try {
+      await SafeConnectAPI.login(email, password);
+      window.location.href = 'dashboard.html';
+    } catch (err) {
+      errorBanner.textContent = err.message;
+      errorBanner.classList.remove('hidden');
+      btn.disabled = false;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">login</span> Log In';
+    }
+  });
+</script>
+</body></html>

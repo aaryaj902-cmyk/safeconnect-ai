@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SafeConnect AI | Verification Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed-dim": "#dec29a",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#b4c5ff",
+                    "secondary-container": "#316bf3",
+                    "inverse-on-surface": "#eaf1ff",
+                    "on-secondary-fixed-variant": "#003ea8",
+                    "surface-bright": "#f8f9ff",
+                    "secondary-fixed": "#dbe1ff",
+                    "on-background": "#0b1c30",
+                    "inverse-primary": "#bec6e0",
+                    "tertiary": "#000000",
+                    "surface-container-high": "#dce9ff",
+                    "outline": "#76777d",
+                    "on-surface-variant": "#45464d",
+                    "surface-variant": "#d3e4fe",
+                    "primary-fixed": "#dae2fd",
+                    "surface-tint": "#565e74",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#eff4ff",
+                    "outline-variant": "#c6c6cd",
+                    "surface-container-highest": "#d3e4fe",
+                    "surface": "#f8f9ff",
+                    "on-error": "#ffffff",
+                    "primary-container": "#131b2e",
+                    "primary": "#000000",
+                    "tertiary-container": "#271901",
+                    "on-primary-container": "#7c839b",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "on-tertiary-fixed-variant": "#574425",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-tertiary-fixed": "#271901",
+                    "surface-container": "#e5eeff",
+                    "on-tertiary-container": "#98805d",
+                    "background": "#f8f9ff",
+                    "surface-dim": "#cbdbf5",
+                    "on-secondary-container": "#fefcff",
+                    "secondary": "#0051d5",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#00174b",
+                    "on-primary-fixed": "#131b2e",
+                    "inverse-surface": "#213145",
+                    "tertiary-fixed": "#fcdeb5",
+                    "on-surface": "#0b1c30"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "margin-desktop": "40px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "display": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .risk-gauge {
+            transition: stroke-dashoffset 1s ease-out;
+        }
+        [data-tab-content] { display: none; }
+        [data-tab-content].active { display: block; }
+        .tab-btn.active {
+            background-color: #316bf3;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- SideNavBar -->
+<aside class="bg-surface-container-low dark:bg-surface-container-lowest h-screen w-64 fixed left-0 top-0 border-r border-outline-variant dark:border-outline flex flex-col p-gutter z-50">
+<div class="mb-gutter">
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-on-primary-fixed">SafeConnect AI</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant opacity-70">Precision Protection</p>
+</div>
+<nav class="flex-1 space-y-2">
+<a class="flex items-center gap-3 p-3 font-label-md text-label-md text-on-surface-variant hover:bg-surface-variant transition-colors duration-200" href="dashboard.html">
+<span class="material-symbols-outlined">dashboard</span> Dashboard
+            </a>
+<a class="flex items-center gap-3 p-3 font-label-md text-label-md bg-secondary-container text-on-secondary-container font-bold rounded-xl transition-transform active:scale-95" href="verification-hub.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">verified_user</span> Verification Hub
+            </a>
+<a class="flex items-center gap-3 p-3 font-label-md text-label-md text-on-surface-variant hover:bg-surface-variant transition-colors duration-200" href="scam-ledger.html">
+<span class="material-symbols-outlined">shield_with_heart</span> Scam Ledger
+            </a>
+<a class="flex items-center gap-3 p-3 font-label-md text-label-md text-on-surface-variant hover:bg-surface-variant transition-colors duration-200" href="history.html">
+<span class="material-symbols-outlined">history</span> Scan History
+            </a>
+</nav>
+<div class="mt-auto pt-gutter border-t border-outline-variant">
+<a href="scam-ledger.html" class="block text-center w-full bg-primary text-on-primary font-label-md text-label-md py-3 rounded-xl hover:opacity-90 transition-all">
+                View Scam Ledger
+            </a>
+</div>
+</aside>
+<!-- Main Content Shell -->
+<div class="ml-64 flex flex-col min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-surface-bright dark:bg-surface-dim flex items-center justify-between h-16 px-margin-desktop sticky top-0 border-b border-outline-variant dark:border-outline z-40">
+<div class="flex items-center gap-4">
+<span class="font-label-md text-label-md text-on-surface-variant">Security Center / Verification Hub</span>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative flex items-center bg-surface-container rounded-full px-4 py-1.5 border border-outline-variant">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-label-md w-48" placeholder="Search logs..." type="text"/>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-secondary transition-all">notifications</span>
+<div id="auth-slot"></div>
+</div>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="p-margin-desktop flex-1">
+<div class="max-w-container-max mx-auto space-y-gutter">
+<!-- Header Section -->
+<section class="space-y-4">
+<div class="flex flex-col gap-2">
+<h2 class="font-headline-lg text-headline-lg text-primary">Verification Hub</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Unified multi-vector analysis for recruiter profiles, communications, and job listings.</p>
+</div>
+<!-- Segmented Control Tabs -->
+<div class="flex bg-surface-container p-1 rounded-xl w-fit">
+<button class="tab-btn active px-6 py-2.5 rounded-lg font-label-md text-label-md transition-all flex items-center gap-2" data-tab="profile" onclick="switchTab('profile')">
+<span class="material-symbols-outlined text-[18px]">person</span> Recruiter Profile
+                        </button>
+<button class="tab-btn px-6 py-2.5 rounded-lg font-label-md text-label-md transition-all flex items-center gap-2" data-tab="message" onclick="switchTab('message')">
+<span class="material-symbols-outlined text-[18px]">chat</span> Recruiter Message
+                        </button>
+<button class="tab-btn px-6 py-2.5 rounded-lg font-label-md text-label-md transition-all flex items-center gap-2" data-tab="job" onclick="switchTab('job')">
+<span class="material-symbols-outlined text-[18px]">work</span> Job Listing
+                        </button>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Side: Input Panels -->
+<div class="lg:col-span-7 space-y-gutter">
+<!-- Recruiter Profile Tab -->
+<div class="active bg-surface-container-lowest border border-outline-variant rounded-xl p-gutter shadow-sm transition-all animate-in fade-in slide-in-from-left-2" data-tab-content="profile" id="profile-tab">
+<h3 class="font-headline-md text-headline-md mb-6">Profile Verification</h3>
+<div class="space-y-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-base">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Full Name</label>
+<input class="w-full border-outline-variant rounded-xl focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all font-body-md text-body-md p-3" id="profile-name" placeholder="e.g. James Henderson" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Company Name</label>
+<input class="w-full border-outline-variant rounded-xl focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all font-body-md text-body-md p-3" id="profile-company" placeholder="e.g. Global Tech Solutions" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">LinkedIn Profile URL</label>
+<input class="w-full border-outline-variant rounded-xl focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all font-body-md text-body-md p-3" id="profile-linkedin" placeholder="https://linkedin.com/in/..." type="url"/>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md py-4 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-all" id="profile-scan-btn" onclick="runProfileScan()">
+<span class="material-symbols-outlined text-[20px]">verified</span> Run Profile Scan
+                                </button>
+</div>
+</div>
+<!-- Recruiter Message Tab -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-gutter shadow-sm transition-all" data-tab-content="message" id="message-tab">
+<h3 class="font-headline-md text-headline-md mb-6">Communication Analysis</h3>
+<div class="space-y-gutter">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Sender Email (optional)</label>
+<input class="w-full border-outline-variant rounded-xl focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all font-body-md text-body-md p-3" id="message-sender-email" placeholder="e.g. hr-verification@gmail-recruiters.com" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Paste Recruiter Message</label>
+<textarea class="w-full border-outline-variant rounded-xl focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all font-body-md text-body-md p-4 min-h-[260px]" id="message-text" placeholder="Paste the email, LinkedIn message, or SMS content here for linguistic analysis..."></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md py-4 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-all" id="message-scan-btn" onclick="runMessageScan()">
+<span class="material-symbols-outlined text-[20px]">psychology</span> Analyze Intent &amp; Patterns
+                                </button>
+</div>
+</div>
+<!-- Job Listing Tab -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-gutter shadow-sm transition-all" data-tab-content="job" id="job-tab">
+<h3 class="font-headline-md text-headline-md mb-6">Job Legitimacy Check</h3>
+<div class="space-y-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-base">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Job Title</label>
+<input class="w-full border-outline-variant rounded-xl focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all font-body-md text-body-md p-3" id="job-title" placeholder="e.g. Remote Data Analyst" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Employer</label>
+<input class="w-full border-outline-variant rounded-xl focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all font-body-md text-body-md p-3" id="job-company" placeholder="e.g. Acme Corp" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-base">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Salary Range (optional)</label>
+<input class="w-full border-outline-variant rounded-xl focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all font-body-md text-body-md p-3" id="job-salary" placeholder="e.g. 60000-75000" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Location (optional)</label>
+<input class="w-full border-outline-variant rounded-xl focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all font-body-md text-body-md p-3" id="job-location" placeholder="e.g. Remote / New York, NY" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Job Description / Requirements</label>
+<textarea class="w-full border-outline-variant rounded-xl focus:border-secondary focus:ring-2 focus:ring-secondary/20 transition-all font-body-md text-body-md p-4 min-h-[160px]" id="job-description" placeholder="Paste the job description or link to scan for suspicious requirements..."></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md py-4 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-all" id="job-scan-btn" onclick="runJobScan()">
+<span class="material-symbols-outlined text-[20px]">search_check</span> Verify Job Details
+                                </button>
+</div>
+</div>
+</div>
+<!-- Right Side: AI Analysis Panel -->
+<div class="lg:col-span-5 space-y-gutter">
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-gutter flex flex-col items-center text-center relative overflow-hidden">
+<h3 class="font-label-sm text-label-sm text-on-surface-variant uppercase mb-6">Global Trust Score</h3>
+<!-- Risk Meter -->
+<div class="relative w-48 h-48 flex items-center justify-center mb-6">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container" cx="96" cy="96" fill="transparent" r="88" stroke="currentColor" stroke-width="12"></circle>
+<circle class="text-outline-variant risk-gauge" cx="96" cy="96" fill="transparent" id="risk-gauge-circle" r="88" stroke="currentColor" stroke-dasharray="553" stroke-dashoffset="553" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-display text-display text-on-surface-variant" id="score-value">--</span>
+<span class="font-label-md text-label-md text-on-surface-variant">/ 100</span>
+</div>
+</div>
+<div class="inline-flex items-center gap-2 px-4 py-1.5 bg-surface-container rounded-full text-on-surface-variant mb-4" id="risk-badge">
+<span class="material-symbols-outlined text-[18px]">hourglass_empty</span>
+<span class="font-label-md text-label-md">Awaiting Input</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant" id="analysis-summary">Fill in the form on the left and run a scan to see your AI trust analysis here.</p>
+</div>
+<!-- Signals -->
+<div class="space-y-3" id="signals-list"></div>
+<!-- Explainable AI (XAI) Cards -->
+<div class="bg-primary text-on-primary rounded-xl p-gutter shadow-xl">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-secondary">psychology</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-primary-container">AI Reasoning Breakdown</span>
+</div>
+<div class="space-y-4" id="xai-reasons">
+<p class="font-body-md text-body-md text-on-primary-container text-sm">Run a scan to see the AI's step-by-step reasoning here.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container flex flex-row justify-between items-center py-base px-margin-desktop border-t border-outline-variant mt-auto">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-bold text-primary">SafeConnect AI</span>
+<span class="text-on-surface-variant/40">|</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant opacity-80">© 2024 SafeConnect AI. Protected by Advanced Cryptography.</p>
+</div>
+<div class="flex gap-6">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:underline transition-opacity opacity-80 hover:opacity-100" href="#">Security Badges</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:underline transition-opacity opacity-80 hover:opacity-100" href="#">Help Center</a>
+</div>
+</footer>
+</div>
+<!-- App Scripts -->
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/ui.js"></script>
+<script>
+        let lastResultByTab = {}; // cache last result per tab so switching tabs doesn't lose it
+
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-tab') === tabName) btn.classList.add('active');
+            });
+            document.querySelectorAll('[data-tab-content]').forEach(content => {
+                content.classList.remove('active');
+                if (content.getAttribute('data-tab-content') === tabName) content.classList.add('active');
+            });
+
+            if (lastResultByTab[tabName]) {
+                renderResult(lastResultByTab[tabName]);
+            } else {
+                renderIdleState();
+            }
+        }
+
+        function renderIdleState() {
+            document.getElementById('score-value').textContent = '--';
+            document.getElementById('score-value').className = 'font-display text-display text-on-surface-variant';
+            const gauge = document.getElementById('risk-gauge-circle');
+            gauge.style.stroke = '#c6c6cd';
+            gauge.style.strokeDashoffset = '553';
+            const badge = document.getElementById('risk-badge');
+            badge.className = 'inline-flex items-center gap-2 px-4 py-1.5 bg-surface-container rounded-full text-on-surface-variant mb-4';
+            badge.innerHTML = `<span class="material-symbols-outlined text-[18px]">hourglass_empty</span><span class="font-label-md text-label-md">Awaiting Input</span>`;
+            document.getElementById('analysis-summary').textContent = 'Fill in the form on the left and run a scan to see your AI trust analysis here.';
+            document.getElementById('signals-list').innerHTML = '';
+            document.getElementById('xai-reasons').innerHTML = `<p class="font-body-md text-body-md text-on-primary-container text-sm">Run a scan to see the AI's step-by-step reasoning here.</p>`;
+        }
+
+        function renderResult(result) {
+            const scoreEl = document.getElementById('score-value');
+            const gaugeEl = document.getElementById('risk-gauge-circle');
+            const badgeEl = document.getElementById('risk-badge');
+
+            SafeConnectUI.updateGauge({
+                gaugeEl, scoreEl, badgeEl,
+                score: result.trust_score,
+                riskLevel: result.risk_level,
+                verdictLabel: result.verdict_label,
+            });
+            scoreEl.className = 'font-display text-display ' +
+                (result.risk_level === 'high_risk' ? 'text-error' : result.risk_level === 'verify' ? 'text-yellow-700' : 'text-green-700');
+
+            document.getElementById('analysis-summary').textContent = result.summary;
+            SafeConnectUI.renderSignals(document.getElementById('signals-list'), result.signals);
+            SafeConnectUI.renderReasoning(document.getElementById('xai-reasons'), result.reasoning);
+        }
+
+        function setLoading(btn, isLoading, label) {
+            btn.disabled = isLoading;
+            btn.style.opacity = isLoading ? '0.6' : '1';
+            btn.style.cursor = isLoading ? 'not-allowed' : 'pointer';
+            if (isLoading) {
+                btn.dataset.originalHtml = btn.innerHTML;
+                btn.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span> Analyzing...`;
+            } else if (btn.dataset.originalHtml) {
+                btn.innerHTML = btn.dataset.originalHtml;
+            }
+        }
+
+        async function runProfileScan() {
+            const btn = document.getElementById('profile-scan-btn');
+            const fullName = document.getElementById('profile-name').value.trim();
+            const company = document.getElementById('profile-company').value.trim();
+            const linkedin = document.getElementById('profile-linkedin').value.trim();
+
+            if (!fullName || !company) {
+                SafeConnectUI.showToast('Please enter both a name and company.', 'error');
+                return;
+            }
+
+            setLoading(btn, true);
+            try {
+                const result = await SafeConnectAPI.scanProfile(fullName, company, linkedin);
+                lastResultByTab['profile'] = result;
+                renderResult(result);
+            } catch (err) {
+                SafeConnectUI.showToast(err.message, 'error');
+            } finally {
+                setLoading(btn, false);
+            }
+        }
+
+        async function runMessageScan() {
+            const btn = document.getElementById('message-scan-btn');
+            const text = document.getElementById('message-text').value.trim();
+            const senderEmail = document.getElementById('message-sender-email').value.trim();
+
+            if (!text) {
+                SafeConnectUI.showToast('Please paste a message to analyze.', 'error');
+                return;
+            }
+
+            setLoading(btn, true);
+            try {
+                const result = await SafeConnectAPI.scanMessage(text, senderEmail);
+                lastResultByTab['message'] = result;
+                renderResult(result);
+            } catch (err) {
+                SafeConnectUI.showToast(err.message, 'error');
+            } finally {
+                setLoading(btn, false);
+            }
+        }
+
+        async function runJobScan() {
+            const btn = document.getElementById('job-scan-btn');
+            const title = document.getElementById('job-title').value.trim();
+            const company = document.getElementById('job-company').value.trim();
+            const salary = document.getElementById('job-salary').value.trim();
+            const location = document.getElementById('job-location').value.trim();
+            const description = document.getElementById('job-description').value.trim();
+
+            if (!title || !company) {
+                SafeConnectUI.showToast('Please enter both a job title and employer.', 'error');
+                return;
+            }
+
+            setLoading(btn, true);
+            try {
+                const result = await SafeConnectAPI.scanJob(title, company, description, salary, location);
+                lastResultByTab['job'] = result;
+                renderResult(result);
+            } catch (err) {
+                SafeConnectUI.showToast(err.message, 'error');
+            } finally {
+                setLoading(btn, false);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            SafeConnectUI.mountAuthSlot();
+            renderIdleState();
+
+            // Pre-fill from query params if arriving from a "Scan New Link" shortcut elsewhere.
+            const params = new URLSearchParams(window.location.search);
+            const tab = params.get('tab');
+            if (tab && ['profile', 'message', 'job'].includes(tab)) {
+                switchTab(tab);
+            }
+        });
+    </script>
+</body></html>

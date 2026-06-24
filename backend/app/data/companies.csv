@@ -1,0 +1,459 @@
+company_id,name,industry,headquarters,official_domain,founded_year,trust_status,trust_score,employee_count,report_count,notes
+1,Google,Internet,"Mountain View, CA, US",google.com,1998,verified,97,10000,0,"Publicly known, established company."
+2,Microsoft,Computer Software,"Redmond, WA, US",microsoft.com,1975,verified,98,200000,0,"Publicly known, established company."
+3,Amazon,Internet/Retail,"Seattle, WA, US",amazon.com,1994,verified,92,5000,0,"Publicly known, established company."
+4,Meta Platforms,Internet,"Menlo Park, CA, US",meta.com,2004,verified,93,25000,0,"Publicly known, established company."
+5,Apple,Consumer Electronics,"Cupertino, CA, US",apple.com,1976,verified,92,100000,0,"Publicly known, established company."
+6,Netflix,Media Production,"Los Gatos, CA, US",netflix.com,1997,verified,95,5000,0,"Publicly known, established company."
+7,Salesforce,Computer Software,"San Francisco, CA, US",salesforce.com,1999,verified,93,50000,0,"Publicly known, established company."
+8,IBM,Information Technology and Services,"Armonk, NY, US",ibm.com,1911,verified,98,5000,0,"Publicly known, established company."
+9,Adobe,Computer Software,"San Jose, CA, US",adobe.com,1982,verified,95,5000,0,"Publicly known, established company."
+10,Oracle,Computer Software,"Austin, TX, US",oracle.com,1977,verified,98,5000,0,"Publicly known, established company."
+11,Accenture,Management Consulting,"Dublin, IE",accenture.com,1989,verified,93,10000,0,"Publicly known, established company."
+12,Deloitte,Management Consulting,"London, GB",deloitte.com,1845,verified,92,100000,0,"Publicly known, established company."
+13,Infosys,Information Technology and Services,"Bangalore, KA, IN",infosys.com,1981,verified,98,5000,0,"Publicly known, established company."
+14,Tata Consultancy Services,Information Technology and Services,"Mumbai, MH, IN",tcs.com,1968,verified,95,5000,0,"Publicly known, established company."
+15,Wipro,Information Technology and Services,"Bangalore, KA, IN",wipro.com,1945,verified,94,25000,0,"Publicly known, established company."
+16,HCLTech,Information Technology and Services,"Noida, UP, IN",hcltech.com,1976,verified,98,10000,0,"Publicly known, established company."
+17,JPMorgan Chase,Banking,"New York, NY, US",jpmorganchase.com,1799,verified,93,100000,0,"Publicly known, established company."
+18,Goldman Sachs,Financial Services,"New York, NY, US",goldmansachs.com,1869,verified,96,100000,0,"Publicly known, established company."
+19,Spotify,Media Production,"Stockholm, SE",spotify.com,2006,verified,94,5000,0,"Publicly known, established company."
+20,Shopify,Computer Software,"Ottawa, ON, CA",shopify.com,2006,verified,95,25000,0,"Publicly known, established company."
+21,Stripe,Financial Services,"San Francisco, CA, US",stripe.com,2010,verified,93,100000,0,"Publicly known, established company."
+22,Atlassian,Computer Software,"Sydney, NSW, AU",atlassian.com,2002,verified,93,100000,0,"Publicly known, established company."
+23,SAP,Computer Software,"Walldorf, DE",sap.com,1972,verified,92,100000,0,"Publicly known, established company."
+24,Siemens,Industrial Automation,"Munich, DE",siemens.com,1847,verified,95,50000,0,"Publicly known, established company."
+25,Unilever,Consumer Goods,"London, GB",unilever.com,1929,verified,98,25000,0,"Publicly known, established company."
+26,Procter & Gamble,Consumer Goods,"Cincinnati, OH, US",pg.com,1837,verified,99,100000,0,"Publicly known, established company."
+27,LinkedIn,Internet,"Sunnyvale, CA, US",linkedin.com,2002,verified,99,25000,0,"Publicly known, established company."
+28,Intel,Semiconductors,"Santa Clara, CA, US",intel.com,1968,verified,96,10000,0,"Publicly known, established company."
+29,NVIDIA,Semiconductors,"Santa Clara, CA, US",nvidia.com,1993,verified,94,200000,0,"Publicly known, established company."
+30,Cisco Systems,Networking,"San Jose, CA, US",cisco.com,1984,verified,95,5000,0,"Publicly known, established company."
+31,XYZ Tech,Information Technology and Services,"Austin, TX, US",xyztech.com,2011,verified,91,150,0,Registered business with verifiable domain and presence.
+32,Verified Tech Startup,Computer Software,"San Francisco, CA, US",verifiedtechstartup.com,2018,verified,90,150,0,Registered business with verifiable domain and presence.
+33,Global Tech Solutions,Information Technology and Services,"Chicago, IL, US",globaltechsolutions.com,2009,verified,87,300,0,Registered business with verifiable domain and presence.
+34,Harborview Financial,Logistics and Supply Chain,"San Francisco, CA, US",harborviewfinancial.com,1992,verified,86,120,0,Registered business with verifiable domain and presence.
+35,Lakeside Retail Co.,Financial Services,"Sydney, NSW, AU",lakesideretailco.com,2016,verified,83,10,0,Registered business with verifiable domain and presence.
+36,Oakmont Consulting,Telecommunications,"London, England, GB",oakmontconsulting.com,2005,verified,80,800,0,Registered business with verifiable domain and presence.
+37,Cascade Analytics,Logistics and Supply Chain,"Mumbai, MH, IN",cascadeanalytics.com,2014,verified,72,1500,0,Registered business with verifiable domain and presence.
+38,Summit Healthcare,Hospital & Health Care,"Bangalore, KA, IN",summithealthcare.com,1998,verified,77,800,0,Registered business with verifiable domain and presence.
+39,Silverline Financial,Human Resources,"Manchester, England, GB",silverlinefinancial.com,2013,verified,79,800,0,Registered business with verifiable domain and presence.
+40,Pinecrest Manufacturing,Information Technology and Services,"Atlanta, GA, US",pinecrestmanufacturing.com,2007,verified,75,300,0,Registered business with verifiable domain and presence.
+41,Bluepeak Analytics,Real Estate,"Atlanta, GA, US",bluepeakanalytics.com,2015,verified,79,10,0,Registered business with verifiable domain and presence.
+42,Horizon Media,Construction,"Toronto, ON, CA",horizonmedia.com,2013,verified,83,50,0,Registered business with verifiable domain and presence.
+43,Harborview Media,Education Management,"Seattle, WA, US",harborviewmedia.com,1993,verified,96,120,0,Registered business with verifiable domain and presence.
+44,Pacific Crest Holdings,Marketing and Advertising,"Bangalore, KA, IN",pacificcrestholdings.com,2011,verified,81,800,0,Registered business with verifiable domain and presence.
+45,Pinecrest Logistics,Financial Services,"San Francisco, CA, US",pinecrestlogistics.com,1996,verified,74,25,0,Registered business with verifiable domain and presence.
+46,Oakmont Logistics,Insurance,"London, England, GB",oakmontlogistics.com,1992,verified,94,1500,0,Registered business with verifiable domain and presence.
+47,Apex Group,Construction,"London, England, GB",apexgroup.com,2008,verified,89,300,0,Registered business with verifiable domain and presence.
+48,Ironwood Group,Insurance,"Pune, MH, IN",ironwoodgroup.com,2017,verified,89,800,0,Registered business with verifiable domain and presence.
+49,Oakmont Solutions,Telecommunications,"London, England, GB",oakmontsolutions.com,2019,verified,89,120,0,Registered business with verifiable domain and presence.
+50,Pinecrest Media,Hospital & Health Care,"New York, NY, US",pinecrestmedia.com,2012,verified,75,120,0,Registered business with verifiable domain and presence.
+51,Summit Systems,Real Estate,"Austin, TX, US",summitsystems.com,1992,verified,80,300,0,Registered business with verifiable domain and presence.
+52,Northbridge Industries,Information Technology and Services,"Manchester, England, GB",northbridgeindustries.com,1994,verified,87,10,0,Registered business with verifiable domain and presence.
+53,Cascade Technologies,Computer Software,"Pune, MH, IN",cascadetechnologies.com,1998,verified,89,120,0,Registered business with verifiable domain and presence.
+54,Crestview Healthcare,Retail,"Manchester, England, GB",crestviewhealthcare.com,2008,verified,85,10,0,Registered business with verifiable domain and presence.
+55,Crestview Industries,Insurance,"Boston, MA, US",crestviewindustries.com,2001,verified,85,1500,0,Registered business with verifiable domain and presence.
+56,Silverline Partners,Education Management,"New York, NY, US",silverlinepartners.com,1998,verified,86,50,0,Registered business with verifiable domain and presence.
+57,Crestview Holdings,Information Technology and Services,"Mumbai, MH, IN",crestviewholdings.com,2018,verified,79,800,0,Registered business with verifiable domain and presence.
+58,Pacific Crest Consulting,Retail,"Sydney, NSW, AU",pacificcrestconsulting.com,2012,verified,94,50,0,Registered business with verifiable domain and presence.
+59,Lakeside Manufacturing,Telecommunications,"Chicago, IL, US",lakesidemanufacturing.com,2019,verified,87,1500,0,Registered business with verifiable domain and presence.
+60,Glenmark Retail Co.,Human Resources,"Chicago, IL, US",glenmarkretailco.com,1997,verified,95,25,0,Registered business with verifiable domain and presence.
+61,Granite Media,Insurance,"Mumbai, MH, IN",granitemedia.com,1999,verified,76,300,0,Registered business with verifiable domain and presence.
+62,Redwood Manufacturing,Insurance,"New York, NY, US",redwoodmanufacturing.com,1986,verified,95,50,0,Registered business with verifiable domain and presence.
+63,Redwood Healthcare,Hospital & Health Care,"Bangalore, KA, IN",redwoodhealthcare.com,2007,verified,84,1500,0,Registered business with verifiable domain and presence.
+64,Brookstone Manufacturing,Retail,"San Francisco, CA, US",brookstonemanufacturing.com,1999,verified,73,25,0,Registered business with verifiable domain and presence.
+65,Redwood Systems,Retail,"Chicago, IL, US",redwoodsystems.com,2015,verified,89,300,0,Registered business with verifiable domain and presence.
+66,Granite Technologies,Real Estate,"Sydney, NSW, AU",granitetechnologies.com,2007,verified,95,800,0,Registered business with verifiable domain and presence.
+67,Summit Industries,Construction,"Mumbai, MH, IN",summitindustries.com,1997,verified,85,25,0,Registered business with verifiable domain and presence.
+68,Westgate Retail Co.,Computer Software,"Mumbai, MH, IN",westgateretailco.com,2010,verified,84,120,0,Registered business with verifiable domain and presence.
+69,Brookstone Consulting,Logistics and Supply Chain,"Boston, MA, US",brookstoneconsulting.com,2008,verified,78,50,0,Registered business with verifiable domain and presence.
+70,Crestview Networks,Telecommunications,"Toronto, ON, CA",crestviewnetworks.com,1994,verified,89,1500,0,Registered business with verifiable domain and presence.
+71,Vantage Analytics,Financial Services,"Austin, TX, US",vantageanalytics.com,1985,verified,95,25,0,Registered business with verifiable domain and presence.
+72,Fairview Group,Information Technology and Services,"New York, NY, US",fairviewgroup.com,1991,verified,86,800,0,Registered business with verifiable domain and presence.
+73,Crestview Labs,Hospital & Health Care,"London, England, GB",crestviewlabs.com,2017,verified,90,800,0,Registered business with verifiable domain and presence.
+74,Meridian Financial,Education Management,"Chicago, IL, US",meridianfinancial.com,2005,verified,78,300,0,Registered business with verifiable domain and presence.
+75,Westgate Group,Information Technology and Services,"Sydney, NSW, AU",westgategroup.com,2007,verified,84,800,0,Registered business with verifiable domain and presence.
+76,Atlas Capital,Construction,"Pune, MH, IN",atlascapital.com,2017,verified,74,300,0,Registered business with verifiable domain and presence.
+77,Crestview Capital,Education Management,"New York, NY, US",crestviewcapital.com,2013,verified,94,25,0,Registered business with verifiable domain and presence.
+78,Vantage Technologies,Retail,"Seattle, WA, US",vantagetechnologies.com,2018,verified,89,10,0,Registered business with verifiable domain and presence.
+79,Redwood Industries,Education Management,"New York, NY, US",redwoodindustries.com,2005,verified,91,300,0,Registered business with verifiable domain and presence.
+80,Glenmark Holdings,Real Estate,"Mumbai, MH, IN",glenmarkholdings.com,1991,verified,87,10,0,Registered business with verifiable domain and presence.
+81,Horizon Systems,Marketing and Advertising,"New York, NY, US",horizonsystems.com,1991,verified,86,120,0,Registered business with verifiable domain and presence.
+82,Fairview Technologies,Telecommunications,"Sydney, NSW, AU",fairviewtechnologies.com,1989,verified,84,50,0,Registered business with verifiable domain and presence.
+83,Vantage Capital,Logistics and Supply Chain,"London, England, GB",vantagecapital.com,1997,verified,92,50,0,Registered business with verifiable domain and presence.
+84,Harborview Capital,Education Management,"Mumbai, MH, IN",harborviewcapital.com,2015,verified,86,25,0,Registered business with verifiable domain and presence.
+85,Silverline Capital,Construction,"Pune, MH, IN",silverlinecapital.com,1988,verified,86,1500,0,Registered business with verifiable domain and presence.
+86,Harborview Group,Construction,"San Francisco, CA, US",harborviewgroup.com,2010,verified,84,50,0,Registered business with verifiable domain and presence.
+87,Summit Logistics,Construction,"San Francisco, CA, US",summitlogistics.com,1998,verified,91,50,0,Registered business with verifiable domain and presence.
+88,Sterling Industries,Telecommunications,"Austin, TX, US",sterlingindustries.com,2008,verified,74,50,0,Registered business with verifiable domain and presence.
+89,Lakeside Logistics,Financial Services,"Bangalore, KA, IN",lakesidelogistics.com,2012,verified,86,120,0,Registered business with verifiable domain and presence.
+90,Ironwood Labs,Marketing and Advertising,"London, England, GB",ironwoodlabs.com,1988,verified,96,50,0,Registered business with verifiable domain and presence.
+91,Apex Media,Retail,"London, England, GB",apexmedia.com,2003,verified,86,10,0,Registered business with verifiable domain and presence.
+92,Bluepeak Logistics,Financial Services,"Austin, TX, US",bluepeaklogistics.com,2018,verified,91,10,0,Registered business with verifiable domain and presence.
+93,Eastview Partners,Marketing and Advertising,"Mumbai, MH, IN",eastviewpartners.com,1993,verified,96,120,0,Registered business with verifiable domain and presence.
+94,Pacific Crest Healthcare,Construction,"Austin, TX, US",pacificcresthealthcare.com,2019,verified,86,300,0,Registered business with verifiable domain and presence.
+95,Redwood Retail Co.,Computer Software,"Seattle, WA, US",redwoodretailco.com,1988,verified,95,800,0,Registered business with verifiable domain and presence.
+96,Lakeside Labs,Computer Software,"Seattle, WA, US",lakesidelabs.com,1986,verified,90,10,0,Registered business with verifiable domain and presence.
+97,Sterling Healthcare,Retail,"Chicago, IL, US",sterlinghealthcare.com,2004,verified,80,120,0,Registered business with verifiable domain and presence.
+98,Pacific Crest Industries,Real Estate,"New York, NY, US",pacificcrestindustries.com,2006,verified,87,120,0,Registered business with verifiable domain and presence.
+99,Stonefield Group,Information Technology and Services,"London, England, GB",stonefieldgroup.com,2000,verified,73,25,0,Registered business with verifiable domain and presence.
+100,Stonefield Solutions,Financial Services,"Chicago, IL, US",stonefieldsolutions.com,2004,verified,90,50,0,Registered business with verifiable domain and presence.
+101,Glenmark Systems,Marketing and Advertising,"Atlanta, GA, US",glenmarksystems.com,2017,verified,91,25,0,Registered business with verifiable domain and presence.
+102,Stonefield Manufacturing,Telecommunications,"New York, NY, US",stonefieldmanufacturing.com,2001,verified,71,10,0,Registered business with verifiable domain and presence.
+103,Apex Capital,Education Management,"Chicago, IL, US",apexcapital.com,2017,verified,85,25,0,Registered business with verifiable domain and presence.
+104,Harborview Industries,Human Resources,"Pune, MH, IN",harborviewindustries.com,2012,verified,91,120,0,Registered business with verifiable domain and presence.
+105,Fairview Media,Education Management,"Seattle, WA, US",fairviewmedia.com,1998,verified,77,50,0,Registered business with verifiable domain and presence.
+106,Meridian Group,Construction,"Boston, MA, US",meridiangroup.com,1988,verified,96,25,0,Registered business with verifiable domain and presence.
+107,Apex Consulting,Construction,"Sydney, NSW, AU",apexconsulting.com,2011,verified,90,800,0,Registered business with verifiable domain and presence.
+108,Northbridge Consulting,Human Resources,"Pune, MH, IN",northbridgeconsulting.com,2009,verified,86,800,0,Registered business with verifiable domain and presence.
+109,Brightwater Logistics,Insurance,"Seattle, WA, US",brightwaterlogistics.com,1987,verified,84,25,0,Registered business with verifiable domain and presence.
+110,Lakeside Healthcare,Real Estate,"San Francisco, CA, US",lakesidehealthcare.com,2005,verified,84,120,0,Registered business with verifiable domain and presence.
+111,Fairview Retail Co.,Hospital & Health Care,"New York, NY, US",fairviewretailco.com,2004,verified,76,50,0,Registered business with verifiable domain and presence.
+112,Lakeside Technologies,Retail,"Denver, CO, US",lakesidetechnologies.com,1990,verified,85,50,0,Registered business with verifiable domain and presence.
+113,Granite Consulting,Financial Services,"Denver, CO, US",graniteconsulting.com,1987,verified,82,10,0,Registered business with verifiable domain and presence.
+114,Brightwater Financial,Human Resources,"Chicago, IL, US",brightwaterfinancial.com,1990,verified,88,300,0,Registered business with verifiable domain and presence.
+115,Pacific Crest Group,Human Resources,"Sydney, NSW, AU",pacificcrestgroup.com,2009,verified,94,50,0,Registered business with verifiable domain and presence.
+116,Brookstone Analytics,Financial Services,"Seattle, WA, US",brookstoneanalytics.com,1994,verified,71,1500,0,Registered business with verifiable domain and presence.
+117,Granite Capital,Manufacturing,"Atlanta, GA, US",granitecapital.com,2013,verified,77,1500,0,Registered business with verifiable domain and presence.
+118,Eastview Capital,Logistics and Supply Chain,"Pune, MH, IN",eastviewcapital.com,1986,verified,96,800,0,Registered business with verifiable domain and presence.
+119,Atlas Logistics,Computer Software,"New York, NY, US",atlaslogistics.com,1987,verified,74,800,0,Registered business with verifiable domain and presence.
+120,Cascade Industries,Construction,"Pune, MH, IN",cascadeindustries.com,2013,verified,87,10,0,Registered business with verifiable domain and presence.
+121,Clearwater Technologies,Construction,"New York, NY, US",clearwatertechnologies.com,1985,verified,91,800,0,Registered business with verifiable domain and presence.
+122,Apex Networks,Telecommunications,"San Francisco, CA, US",apexnetworks.com,2017,verified,87,10,0,Registered business with verifiable domain and presence.
+123,Oakmont Capital,Computer Software,"Bangalore, KA, IN",oakmontcapital.com,2015,verified,78,1500,0,Registered business with verifiable domain and presence.
+124,Clearwater Networks,Real Estate,"Pune, MH, IN",clearwaternetworks.com,2009,verified,72,120,0,Registered business with verifiable domain and presence.
+125,Oakmont Financial,Construction,"New York, NY, US",oakmontfinancial.com,2004,verified,93,300,0,Registered business with verifiable domain and presence.
+126,Crestview Retail Co.,Telecommunications,"New York, NY, US",crestviewretailco.com,1997,verified,91,800,0,Registered business with verifiable domain and presence.
+127,Crestview Technologies,Real Estate,"New York, NY, US",crestviewtechnologies.com,2016,verified,78,800,0,Registered business with verifiable domain and presence.
+128,Bluepeak Systems,Human Resources,"Atlanta, GA, US",bluepeaksystems.com,2003,verified,92,300,0,Registered business with verifiable domain and presence.
+129,Brightwater Networks,Real Estate,"Atlanta, GA, US",brightwaternetworks.com,1992,verified,87,25,0,Registered business with verifiable domain and presence.
+130,Brightwater Consulting,Real Estate,"New York, NY, US",brightwaterconsulting.com,2003,verified,84,10,0,Registered business with verifiable domain and presence.
+131,Summit Consulting,Financial Services,"Bangalore, KA, IN",summitconsulting.com,2018,verified,78,50,0,Registered business with verifiable domain and presence.
+132,Horizon Analytics,Real Estate,"Denver, CO, US",horizonanalytics.com,1986,verified,75,10,0,Registered business with verifiable domain and presence.
+133,Redwood Networks,Construction,"Seattle, WA, US",redwoodnetworks.com,1994,verified,83,50,0,Registered business with verifiable domain and presence.
+134,Pinecrest Retail Co.,Computer Software,"Pune, MH, IN",pinecrestretailco.com,2006,verified,70,50,0,Registered business with verifiable domain and presence.
+135,Eastview Retail Co.,Manufacturing,"Denver, CO, US",eastviewretailco.com,1992,verified,76,800,0,Registered business with verifiable domain and presence.
+136,Apex Financial,Marketing and Advertising,"Boston, MA, US",apexfinancial.com,1989,verified,82,120,0,Registered business with verifiable domain and presence.
+137,Pacific Crest Solutions,Marketing and Advertising,"San Francisco, CA, US",pacificcrestsolutions.com,1988,verified,96,800,0,Registered business with verifiable domain and presence.
+138,Brightwater Group,Human Resources,"Seattle, WA, US",brightwatergroup.com,2018,verified,90,120,0,Registered business with verifiable domain and presence.
+139,Meridian Manufacturing,Telecommunications,"Denver, CO, US",meridianmanufacturing.com,1986,verified,95,1500,0,Registered business with verifiable domain and presence.
+140,Clearwater Media,Education Management,"London, England, GB",clearwatermedia.com,1998,verified,93,10,0,Registered business with verifiable domain and presence.
+141,Northbridge Labs,Real Estate,"Manchester, England, GB",northbridgelabs.com,1993,verified,90,1500,0,Registered business with verifiable domain and presence.
+142,Brightwater Analytics,Information Technology and Services,"Sydney, NSW, AU",brightwateranalytics.com,2020,verified,74,25,0,Registered business with verifiable domain and presence.
+143,Redwood Labs,Logistics and Supply Chain,"Toronto, ON, CA",redwoodlabs.com,1990,verified,91,50,0,Registered business with verifiable domain and presence.
+144,Brookstone Healthcare,Insurance,"New York, NY, US",brookstonehealthcare.com,2002,verified,90,300,0,Registered business with verifiable domain and presence.
+145,Glenmark Analytics,Education Management,"Chicago, IL, US",glenmarkanalytics.com,2013,verified,80,1500,0,Registered business with verifiable domain and presence.
+146,Harborview Labs,Financial Services,"London, England, GB",harborviewlabs.com,1997,verified,77,10,0,Registered business with verifiable domain and presence.
+147,Stonefield Systems,Information Technology and Services,"Bangalore, KA, IN",stonefieldsystems.com,2011,verified,82,120,0,Registered business with verifiable domain and presence.
+148,Brookstone Capital,Hospital & Health Care,"Denver, CO, US",brookstonecapital.com,2002,verified,80,1500,0,Registered business with verifiable domain and presence.
+149,Northbridge Analytics,Insurance,"London, England, GB",northbridgeanalytics.com,1985,verified,82,1500,0,Registered business with verifiable domain and presence.
+150,Glenmark Capital,Human Resources,"Mumbai, MH, IN",glenmarkcapital.com,1998,verified,72,50,0,Registered business with verifiable domain and presence.
+151,Pacific Crest Technologies,Financial Services,"New York, NY, US",pacificcresttechnologies.com,2012,verified,92,1500,0,Registered business with verifiable domain and presence.
+152,Sterling Analytics,Education Management,"Atlanta, GA, US",sterlinganalytics.com,1989,verified,83,10,0,Registered business with verifiable domain and presence.
+153,Granite Networks,Retail,"Denver, CO, US",granitenetworks.com,2011,verified,91,10,0,Registered business with verifiable domain and presence.
+154,Crestview Logistics,Logistics and Supply Chain,"Sydney, NSW, AU",crestviewlogistics.com,1987,verified,90,800,0,Registered business with verifiable domain and presence.
+155,Silverline Industries,Computer Software,"San Francisco, CA, US",silverlineindustries.com,2004,verified,86,300,0,Registered business with verifiable domain and presence.
+156,Meridian Media,Retail,"Mumbai, MH, IN",meridianmedia.com,2004,verified,96,1500,0,Registered business with verifiable domain and presence.
+157,Horizon Holdings,Hospital & Health Care,"New York, NY, US",horizonholdings.com,2011,verified,92,800,0,Registered business with verifiable domain and presence.
+158,Brightwater Solutions,Information Technology and Services,"Chicago, IL, US",brightwatersolutions.com,2016,verified,91,800,0,Registered business with verifiable domain and presence.
+159,Westgate Consulting,Marketing and Advertising,"Chicago, IL, US",westgateconsulting.com,2012,verified,81,25,0,Registered business with verifiable domain and presence.
+160,Redwood Solutions,Insurance,"Boston, MA, US",redwoodsolutions.com,2011,verified,81,800,0,Registered business with verifiable domain and presence.
+161,Pinecrest Systems,Information Technology and Services,"Mumbai, MH, IN",pinecrestsystems.com,2003,verified,93,1500,0,Registered business with verifiable domain and presence.
+162,Glenmark Consulting,Hospital & Health Care,"Atlanta, GA, US",glenmarkconsulting.com,1997,verified,79,1500,0,Registered business with verifiable domain and presence.
+163,Granite Systems,Hospital & Health Care,"Atlanta, GA, US",granitesystems.com,1999,verified,78,1500,0,Registered business with verifiable domain and presence.
+164,Brightwater Industries,Logistics and Supply Chain,"Atlanta, GA, US",brightwaterindustries.com,1996,verified,77,120,0,Registered business with verifiable domain and presence.
+165,Westgate Solutions,Logistics and Supply Chain,"Austin, TX, US",westgatesolutions.com,2010,verified,71,25,0,Registered business with verifiable domain and presence.
+166,Harborview Retail Co.,Insurance,"San Francisco, CA, US",harborviewretailco.com,1990,verified,75,50,0,Registered business with verifiable domain and presence.
+167,Meridian Partners,Human Resources,"Sydney, NSW, AU",meridianpartners.com,2018,verified,93,120,0,Registered business with verifiable domain and presence.
+168,Northbridge Financial,Human Resources,"Bangalore, KA, IN",northbridgefinancial.com,2009,verified,96,50,0,Registered business with verifiable domain and presence.
+169,Ironwood Networks,Insurance,"Manchester, England, GB",ironwoodnetworks.com,2016,verified,91,50,0,Registered business with verifiable domain and presence.
+170,Summit Manufacturing,Construction,"Sydney, NSW, AU",summitmanufacturing.com,1992,verified,87,1500,0,Registered business with verifiable domain and presence.
+171,Fairview Networks,Hospital & Health Care,"Boston, MA, US",fairviewnetworks.com,2008,verified,93,120,0,Registered business with verifiable domain and presence.
+172,Apex Labs,Hospital & Health Care,"Mumbai, MH, IN",apexlabs.com,2010,verified,71,120,0,Registered business with verifiable domain and presence.
+173,Northbridge Networks,Computer Software,"Mumbai, MH, IN",northbridgenetworks.com,1988,verified,78,25,0,Registered business with verifiable domain and presence.
+174,Vantage Solutions,Marketing and Advertising,"Bangalore, KA, IN",vantagesolutions.com,2005,verified,78,50,0,Registered business with verifiable domain and presence.
+175,Silverline Networks,Telecommunications,"Denver, CO, US",silverlinenetworks.com,2001,verified,83,1500,0,Registered business with verifiable domain and presence.
+176,Redwood Group,Real Estate,"Austin, TX, US",redwoodgroup.com,1985,verified,95,800,0,Registered business with verifiable domain and presence.
+177,Cascade Consulting,Education Management,"Chicago, IL, US",cascadeconsulting.com,2010,verified,94,25,0,Registered business with verifiable domain and presence.
+178,Horizon Labs,Computer Software,"Toronto, ON, CA",horizonlabs.com,1987,verified,85,300,0,Registered business with verifiable domain and presence.
+179,Vantage Consulting,Hospital & Health Care,"San Francisco, CA, US",vantageconsulting.com,2011,verified,85,800,0,Registered business with verifiable domain and presence.
+180,Harborview Partners,Hospital & Health Care,"Austin, TX, US",harborviewpartners.com,2011,verified,84,300,0,Registered business with verifiable domain and presence.
+181,Horizon Group,Marketing and Advertising,"Sydney, NSW, AU",horizongroup.com,1997,verified,80,10,0,Registered business with verifiable domain and presence.
+182,Pinecrest Healthcare,Construction,"Toronto, ON, CA",pinecresthealthcare.com,1996,verified,85,10,0,Registered business with verifiable domain and presence.
+183,Redwood Logistics,Manufacturing,"Atlanta, GA, US",redwoodlogistics.com,2008,verified,71,50,0,Registered business with verifiable domain and presence.
+184,Horizon Industries,Information Technology and Services,"Chicago, IL, US",horizonindustries.com,1997,verified,72,50,0,Registered business with verifiable domain and presence.
+185,Glenmark Partners,Real Estate,"Manchester, England, GB",glenmarkpartners.com,2001,verified,94,1500,0,Registered business with verifiable domain and presence.
+186,Oakmont Technologies,Computer Software,"Toronto, ON, CA",oakmonttechnologies.com,2007,verified,76,10,0,Registered business with verifiable domain and presence.
+187,Cascade Retail Co.,Financial Services,"New York, NY, US",cascaderetailco.com,1998,verified,78,10,0,Registered business with verifiable domain and presence.
+188,Vantage Systems,Manufacturing,"New York, NY, US",vantagesystems.com,2005,verified,83,800,0,Registered business with verifiable domain and presence.
+189,Cascade Partners,Logistics and Supply Chain,"Seattle, WA, US",cascadepartners.com,1989,verified,76,10,0,Registered business with verifiable domain and presence.
+190,Sterling Media,Computer Software,"Manchester, England, GB",sterlingmedia.com,2008,verified,93,300,0,Registered business with verifiable domain and presence.
+191,Summit Partners,Construction,"Bangalore, KA, IN",summitpartners.com,2002,verified,83,50,0,Registered business with verifiable domain and presence.
+192,Cascade Labs,Construction,"New York, NY, US",cascadelabs.com,2008,verified,90,25,0,Registered business with verifiable domain and presence.
+193,Bluepeak Consulting,Construction,"Manchester, England, GB",bluepeakconsulting.com,2008,verified,84,1500,0,Registered business with verifiable domain and presence.
+194,Lakeside Group,Retail,"Seattle, WA, US",lakesidegroup.com,1995,verified,86,25,0,Registered business with verifiable domain and presence.
+195,Granite Solutions,Real Estate,"Boston, MA, US",granitesolutions.com,1988,verified,89,800,0,Registered business with verifiable domain and presence.
+196,Pinecrest Consulting,Insurance,"Manchester, England, GB",pinecrestconsulting.com,1995,verified,90,1500,0,Registered business with verifiable domain and presence.
+197,Pacific Crest Logistics,Logistics and Supply Chain,"Denver, CO, US",pacificcrestlogistics.com,1997,verified,96,120,0,Registered business with verifiable domain and presence.
+198,Lakeside Systems,Information Technology and Services,"Denver, CO, US",lakesidesystems.com,2018,verified,75,120,0,Registered business with verifiable domain and presence.
+199,Vantage Networks,Education Management,"Pune, MH, IN",vantagenetworks.com,2004,verified,90,120,0,Registered business with verifiable domain and presence.
+200,Harborview Networks,Manufacturing,"Austin, TX, US",harborviewnetworks.com,2015,verified,82,10,0,Registered business with verifiable domain and presence.
+201,Summit Group,Retail,"Denver, CO, US",summitgroup.com,2008,verified,72,1500,0,Registered business with verifiable domain and presence.
+202,Crestview Consulting,Insurance,"Boston, MA, US",crestviewconsulting.com,2017,verified,72,10,0,Registered business with verifiable domain and presence.
+203,Sterling Partners,Human Resources,"Mumbai, MH, IN",sterlingpartners.com,1999,verified,72,1500,0,Registered business with verifiable domain and presence.
+204,Cascade Healthcare,Financial Services,"Boston, MA, US",cascadehealthcare.com,2002,verified,96,120,0,Registered business with verifiable domain and presence.
+205,Stonefield Capital,Retail,"Chicago, IL, US",stonefieldcapital.com,2016,verified,95,10,0,Registered business with verifiable domain and presence.
+206,Lakeside Media,Financial Services,"Toronto, ON, CA",lakesidemedia.com,2002,verified,91,50,0,Registered business with verifiable domain and presence.
+207,Pinecrest Partners,Telecommunications,"Mumbai, MH, IN",pinecrestpartners.com,2001,verified,73,1500,0,Registered business with verifiable domain and presence.
+208,Glenmark Solutions,Human Resources,"Pune, MH, IN",glenmarksolutions.com,2008,verified,84,300,0,Registered business with verifiable domain and presence.
+209,Glenmark Industries,Marketing and Advertising,"London, England, GB",glenmarkindustries.com,2010,verified,93,1500,0,Registered business with verifiable domain and presence.
+210,Eastview Consulting,Real Estate,"Chicago, IL, US",eastviewconsulting.com,1996,verified,89,800,0,Registered business with verifiable domain and presence.
+211,Pacific Crest Retail Co.,Insurance,"New York, NY, US",pacificcrestretailco.com,1987,verified,77,25,0,Registered business with verifiable domain and presence.
+212,Brightwater Labs,Construction,"London, England, GB",brightwaterlabs.com,2008,verified,71,25,0,Registered business with verifiable domain and presence.
+213,Apex Manufacturing,Marketing and Advertising,"San Francisco, CA, US",apexmanufacturing.com,2018,verified,81,300,0,Registered business with verifiable domain and presence.
+214,Silverline Group,Real Estate,"San Francisco, CA, US",silverlinegroup.com,1989,verified,90,25,0,Registered business with verifiable domain and presence.
+215,Clearwater Holdings,Real Estate,"Atlanta, GA, US",clearwaterholdings.com,2018,verified,92,10,0,Registered business with verifiable domain and presence.
+216,Eastview Industries,Information Technology and Services,"Manchester, England, GB",eastviewindustries.com,2020,verified,91,25,0,Registered business with verifiable domain and presence.
+217,Westgate Partners,Education Management,"Seattle, WA, US",westgatepartners.com,1989,verified,79,800,0,Registered business with verifiable domain and presence.
+218,Westgate Networks,Computer Software,"Bangalore, KA, IN",westgatenetworks.com,2013,verified,75,25,0,Registered business with verifiable domain and presence.
+219,Bluepeak Healthcare,Hospital & Health Care,"Toronto, ON, CA",bluepeakhealthcare.com,1987,verified,73,50,0,Registered business with verifiable domain and presence.
+220,Oakmont Labs,Human Resources,"Mumbai, MH, IN",oakmontlabs.com,2018,verified,78,50,0,Registered business with verifiable domain and presence.
+221,Clearwater Systems,Computer Software,"Sydney, NSW, AU",clearwatersystems.com,2017,verified,70,25,0,Registered business with verifiable domain and presence.
+222,Stonefield Logistics,Financial Services,"Boston, MA, US",stonefieldlogistics.com,2014,verified,90,800,0,Registered business with verifiable domain and presence.
+223,Ironwood Systems,Construction,"Boston, MA, US",ironwoodsystems.com,2000,verified,82,1500,0,Registered business with verifiable domain and presence.
+224,Sterling Systems,Construction,"Manchester, England, GB",sterlingsystems.com,1989,verified,88,25,0,Registered business with verifiable domain and presence.
+225,Crestview Solutions,Information Technology and Services,"San Francisco, CA, US",crestviewsolutions.com,1991,verified,89,25,0,Registered business with verifiable domain and presence.
+226,Cascade Group,Telecommunications,"Seattle, WA, US",cascadegroup.com,2020,verified,92,50,0,Registered business with verifiable domain and presence.
+227,Silverline Solutions,Insurance,"San Francisco, CA, US",silverlinesolutions.com,1987,verified,72,1500,0,Registered business with verifiable domain and presence.
+228,Atlas Manufacturing,Hospital & Health Care,"Pune, MH, IN",atlasmanufacturing.com,2019,verified,91,10,0,Registered business with verifiable domain and presence.
+229,Pacific Crest Media,Computer Software,"Chicago, IL, US",pacificcrestmedia.com,1998,verified,76,10,0,Registered business with verifiable domain and presence.
+230,Northbridge Solutions,Manufacturing,"Sydney, NSW, AU",northbridgesolutions.com,1990,verified,96,1500,0,Registered business with verifiable domain and presence.
+231,Clearwater Financial,Real Estate,"San Francisco, CA, US",clearwaterfinancial.com,1993,verified,73,1500,0,Registered business with verifiable domain and presence.
+232,Eastview Systems,Marketing and Advertising,"Boston, MA, US",eastviewsystems.com,2006,verified,83,50,0,Registered business with verifiable domain and presence.
+233,Eastview Manufacturing,Retail,"Mumbai, MH, IN",eastviewmanufacturing.com,2017,verified,85,1500,0,Registered business with verifiable domain and presence.
+234,Brightwater Technologies,Telecommunications,"Denver, CO, US",brightwatertechnologies.com,1986,verified,83,300,0,Registered business with verifiable domain and presence.
+235,Meridian Consulting,Logistics and Supply Chain,"Pune, MH, IN",meridianconsulting.com,2003,verified,75,120,0,Registered business with verifiable domain and presence.
+236,Cascade Capital,Marketing and Advertising,"Manchester, England, GB",cascadecapital.com,1995,verified,79,1500,0,Registered business with verifiable domain and presence.
+237,Meridian Logistics,Real Estate,"Austin, TX, US",meridianlogistics.com,1992,verified,90,1500,0,Registered business with verifiable domain and presence.
+238,Summit Analytics,Telecommunications,"Bangalore, KA, IN",summitanalytics.com,2020,verified,95,10,0,Registered business with verifiable domain and presence.
+239,Clearwater Retail Co.,Retail,"San Francisco, CA, US",clearwaterretailco.com,2010,verified,82,800,0,Registered business with verifiable domain and presence.
+240,Summit Labs,Human Resources,"New York, NY, US",summitlabs.com,2008,verified,76,50,0,Registered business with verifiable domain and presence.
+241,Stonefield Labs,Hospital & Health Care,"Pune, MH, IN",stonefieldlabs.com,1993,verified,85,120,0,Registered business with verifiable domain and presence.
+242,Horizon Networks,Financial Services,"London, England, GB",horizonnetworks.com,1987,verified,81,300,0,Registered business with verifiable domain and presence.
+243,Ironwood Capital,Financial Services,"Pune, MH, IN",ironwoodcapital.com,2013,verified,91,300,0,Registered business with verifiable domain and presence.
+244,Brookstone Retail Co.,Financial Services,"Atlanta, GA, US",brookstoneretailco.com,2013,verified,92,1500,0,Registered business with verifiable domain and presence.
+245,Horizon Capital,Hospital & Health Care,"Seattle, WA, US",horizoncapital.com,2004,verified,94,800,0,Registered business with verifiable domain and presence.
+246,Granite Group,Insurance,"Austin, TX, US",granitegroup.com,2000,verified,93,50,0,Registered business with verifiable domain and presence.
+247,Stonefield Industries,Financial Services,"Toronto, ON, CA",stonefieldindustries.com,1991,verified,76,120,0,Registered business with verifiable domain and presence.
+248,Crestview Group,Telecommunications,"Seattle, WA, US",crestviewgroup.com,2004,verified,83,50,0,Registered business with verifiable domain and presence.
+249,Meridian Industries,Human Resources,"Sydney, NSW, AU",meridianindustries.com,1991,verified,78,25,0,Registered business with verifiable domain and presence.
+250,Pinecrest Networks,Information Technology and Services,"New York, NY, US",pinecrestnetworks.com,2010,verified,95,120,0,Registered business with verifiable domain and presence.
+251,Silverline Logistics,Education Management,"Toronto, ON, CA",silverlinelogistics.com,2003,verified,84,10,0,Registered business with verifiable domain and presence.
+252,Brookstone Logistics,Human Resources,"Austin, TX, US",brookstonelogistics.com,1992,verified,84,120,0,Registered business with verifiable domain and presence.
+253,Ironwood Healthcare,Human Resources,"Bangalore, KA, IN",ironwoodhealthcare.com,1991,verified,83,25,0,Registered business with verifiable domain and presence.
+254,Westgate Analytics,Real Estate,"New York, NY, US",westgateanalytics.com,2011,verified,86,800,0,Registered business with verifiable domain and presence.
+255,Oakmont Partners,Human Resources,"Boston, MA, US",oakmontpartners.com,1985,verified,82,1500,0,Registered business with verifiable domain and presence.
+256,Silverline Systems,Education Management,"Boston, MA, US",silverlinesystems.com,1991,verified,88,120,0,Registered business with verifiable domain and presence.
+257,Fairview Systems,Insurance,"Atlanta, GA, US",fairviewsystems.com,2017,verified,70,800,0,Registered business with verifiable domain and presence.
+258,Sterling Manufacturing,Education Management,"Boston, MA, US",sterlingmanufacturing.com,2011,verified,93,120,0,Registered business with verifiable domain and presence.
+259,Cascade Solutions,Marketing and Advertising,"Seattle, WA, US",cascadesolutions.com,2009,verified,82,10,0,Registered business with verifiable domain and presence.
+260,Oakmont Manufacturing,Logistics and Supply Chain,"Seattle, WA, US",oakmontmanufacturing.com,1991,verified,77,50,0,Registered business with verifiable domain and presence.
+261,Brookstone Media,Education Management,"Chicago, IL, US",brookstonemedia.com,2010,verified,84,25,0,Registered business with verifiable domain and presence.
+262,Fairview Logistics,Manufacturing,"Austin, TX, US",fairviewlogistics.com,2007,verified,91,800,0,Registered business with verifiable domain and presence.
+263,Granite Labs,Real Estate,"Seattle, WA, US",granitelabs.com,2020,verified,90,25,0,Registered business with verifiable domain and presence.
+264,Eastview Analytics,Retail,"Mumbai, MH, IN",eastviewanalytics.com,1999,verified,78,800,0,Registered business with verifiable domain and presence.
+265,Crestview Financial,Manufacturing,"Denver, CO, US",crestviewfinancial.com,1988,verified,72,1500,0,Registered business with verifiable domain and presence.
+266,Atlas Retail Co.,Telecommunications,"Austin, TX, US",atlasretailco.com,2018,verified,96,50,0,Registered business with verifiable domain and presence.
+267,Brightwater Healthcare,Logistics and Supply Chain,"San Francisco, CA, US",brightwaterhealthcare.com,1994,verified,77,25,0,Registered business with verifiable domain and presence.
+268,Eastview Networks,Marketing and Advertising,"Mumbai, MH, IN",eastviewnetworks.com,2006,verified,79,50,0,Registered business with verifiable domain and presence.
+269,Sterling Holdings,Financial Services,"Manchester, England, GB",sterlingholdings.com,1990,verified,91,300,0,Registered business with verifiable domain and presence.
+270,Sterling Financial,Hospital & Health Care,"Atlanta, GA, US",sterlingfinancial.com,1998,verified,86,10,0,Registered business with verifiable domain and presence.
+271,Brookstone Networks,Human Resources,"Sydney, NSW, AU",brookstonenetworks.com,1992,verified,87,10,0,Registered business with verifiable domain and presence.
+272,Fairview Solutions,Real Estate,"Atlanta, GA, US",fairviewsolutions.com,1994,verified,92,120,0,Registered business with verifiable domain and presence.
+273,Northbridge Retail Co.,Manufacturing,"Manchester, England, GB",northbridgeretailco.com,1985,verified,96,25,0,Registered business with verifiable domain and presence.
+274,Eastview Group,Information Technology and Services,"Chicago, IL, US",eastviewgroup.com,2011,verified,90,25,0,Registered business with verifiable domain and presence.
+275,Ironwood Industries,Manufacturing,"Toronto, ON, CA",ironwoodindustries.com,2008,verified,80,120,0,Registered business with verifiable domain and presence.
+276,Brightwater Manufacturing,Manufacturing,"Atlanta, GA, US",brightwatermanufacturing.com,2010,verified,80,300,0,Registered business with verifiable domain and presence.
+277,Clearwater Consulting,Telecommunications,"New York, NY, US",clearwaterconsulting.com,2010,verified,93,300,0,Registered business with verifiable domain and presence.
+278,Pinecrest Holdings,Logistics and Supply Chain,"New York, NY, US",pinecrestholdings.com,2010,verified,79,10,0,Registered business with verifiable domain and presence.
+279,Apex Solutions,Hospital & Health Care,"Pune, MH, IN",apexsolutions.com,2015,verified,89,1500,0,Registered business with verifiable domain and presence.
+280,Vantage Group,Human Resources,"Toronto, ON, CA",vantagegroup.com,1990,verified,76,10,0,Registered business with verifiable domain and presence.
+281,Oakmont Networks,Human Resources,"Mumbai, MH, IN",oakmontnetworks.com,1996,verified,73,800,0,Registered business with verifiable domain and presence.
+282,Lakeside Solutions,Construction,"Mumbai, MH, IN",lakesidesolutions.com,1991,verified,90,10,0,Registered business with verifiable domain and presence.
+283,Pacific Crest Financial,Financial Services,"Denver, CO, US",pacificcrestfinancial.com,1987,verified,80,10,0,Registered business with verifiable domain and presence.
+284,Bluepeak Labs,Logistics and Supply Chain,"Bangalore, KA, IN",bluepeaklabs.com,2010,verified,84,10,0,Registered business with verifiable domain and presence.
+285,Westgate Holdings,Computer Software,"San Francisco, CA, US",westgateholdings.com,2015,verified,76,25,0,Registered business with verifiable domain and presence.
+286,Apex Healthcare,Insurance,"Manchester, England, GB",apexhealthcare.com,2000,verified,84,800,0,Registered business with verifiable domain and presence.
+287,Brookstone Partners,Information Technology and Services,"Boston, MA, US",brookstonepartners.com,1994,verified,93,1500,0,Registered business with verifiable domain and presence.
+288,Summit Financial,Human Resources,"London, England, GB",summitfinancial.com,2016,verified,84,800,0,Registered business with verifiable domain and presence.
+289,Lakeside Analytics,Logistics and Supply Chain,"New York, NY, US",lakesideanalytics.com,2005,verified,81,300,0,Registered business with verifiable domain and presence.
+290,Bluepeak Manufacturing,Human Resources,"Austin, TX, US",bluepeakmanufacturing.com,2011,verified,85,120,0,Registered business with verifiable domain and presence.
+291,Vantage Financial,Logistics and Supply Chain,"Denver, CO, US",vantagefinancial.com,2000,verified,82,120,0,Registered business with verifiable domain and presence.
+292,Oakmont Media,Logistics and Supply Chain,"Mumbai, MH, IN",oakmontmedia.com,1999,verified,95,120,0,Registered business with verifiable domain and presence.
+293,Atlas Solutions,Marketing and Advertising,"Pune, MH, IN",atlassolutions.com,1994,verified,95,1500,0,Registered business with verifiable domain and presence.
+294,Atlas Group,Marketing and Advertising,"Pune, MH, IN",atlasgroup.com,2020,verified,91,1500,0,Registered business with verifiable domain and presence.
+295,Northbridge Media,Real Estate,"Bangalore, KA, IN",northbridgemedia.com,1998,verified,78,300,0,Registered business with verifiable domain and presence.
+296,Eastview Technologies,Telecommunications,"Denver, CO, US",eastviewtechnologies.com,2014,verified,87,10,0,Registered business with verifiable domain and presence.
+297,Fairview Manufacturing,Telecommunications,"San Francisco, CA, US",fairviewmanufacturing.com,1999,verified,82,300,0,Registered business with verifiable domain and presence.
+298,Glenmark Healthcare,Manufacturing,"London, England, GB",glenmarkhealthcare.com,2005,verified,85,300,0,Registered business with verifiable domain and presence.
+299,Atlas Systems,Hospital & Health Care,"Chicago, IL, US",atlassystems.com,1997,verified,72,25,0,Registered business with verifiable domain and presence.
+300,Glenmark Group,Hospital & Health Care,"New York, NY, US",glenmarkgroup.com,2016,verified,81,1500,0,Registered business with verifiable domain and presence.
+301,Bluepeak Solutions,Hospital & Health Care,"Pune, MH, IN",bluepeaksolutions.com,2016,verified,88,300,0,Registered business with verifiable domain and presence.
+302,Meridian Healthcare,Telecommunications,"Seattle, WA, US",meridianhealthcare.com,2012,verified,73,120,0,Registered business with verifiable domain and presence.
+303,Cascade Networks,Real Estate,"Pune, MH, IN",cascadenetworks.com,1989,verified,89,800,0,Registered business with verifiable domain and presence.
+304,Pinecrest Industries,Insurance,"San Francisco, CA, US",pinecrestindustries.com,2001,verified,80,300,0,Registered business with verifiable domain and presence.
+305,Horizon Consulting,Human Resources,"London, England, GB",horizonconsulting.com,2010,verified,75,120,0,Registered business with verifiable domain and presence.
+306,Pacific Crest Partners,Retail,"Chicago, IL, US",pacificcrestpartners.com,1999,verified,75,10,0,Registered business with verifiable domain and presence.
+307,Northbridge Healthcare,Telecommunications,"London, England, GB",northbridgehealthcare.com,2015,verified,71,10,0,Registered business with verifiable domain and presence.
+308,Lakeside Networks,Hospital & Health Care,"Mumbai, MH, IN",lakesidenetworks.com,1994,verified,91,10,0,Registered business with verifiable domain and presence.
+309,Harborview Systems,Telecommunications,"New York, NY, US",harborviewsystems.com,1995,verified,96,25,0,Registered business with verifiable domain and presence.
+310,Granite Logistics,Real Estate,"San Francisco, CA, US",granitelogistics.com,2008,verified,74,50,0,Registered business with verifiable domain and presence.
+311,Horizon Solutions,Financial Services,"Bangalore, KA, IN",horizonsolutions.com,2013,verified,87,25,0,Registered business with verifiable domain and presence.
+312,Bluepeak Group,Education Management,"New York, NY, US",bluepeakgroup.com,1998,verified,87,120,0,Registered business with verifiable domain and presence.
+313,Granite Financial,Computer Software,"Seattle, WA, US",granitefinancial.com,1997,verified,81,120,0,Registered business with verifiable domain and presence.
+314,Harborview Technologies,Telecommunications,"Pune, MH, IN",harborviewtechnologies.com,2018,verified,79,25,0,Registered business with verifiable domain and presence.
+315,Atlas Partners,Financial Services,"Pune, MH, IN",atlaspartners.com,1996,verified,86,1500,0,Registered business with verifiable domain and presence.
+316,Horizon Partners,Hospital & Health Care,"Manchester, England, GB",horizonpartners.com,1990,verified,96,10,0,Registered business with verifiable domain and presence.
+317,Global Hire Express,Staffing and Recruiting,Unverified / Remote,,2022,flagged,16,5,279,Multiple community fraud reports; no verifiable corporate registration found.
+318,QuickJobs International,Staffing and Recruiting,Unverified / Remote,,2022,flagged,8,2,380,Multiple community fraud reports; no verifiable corporate registration found.
+319,WorkFromHome Solutions LLC,Staffing and Recruiting,Unverified / Remote,,2023,flagged,15,5,310,Multiple community fraud reports; no verifiable corporate registration found.
+320,Premier Remote Staffing,Staffing and Recruiting,Unverified / Remote,,2022,flagged,14,0,389,Multiple community fraud reports; no verifiable corporate registration found.
+321,FastTrack Employment Group,Staffing and Recruiting,Unverified / Remote,,2025,flagged,19,0,286,Multiple community fraud reports; no verifiable corporate registration found.
+322,EasyHire Worldwide,Staffing and Recruiting,Unverified / Remote,,2026,flagged,9,0,139,Multiple community fraud reports; no verifiable corporate registration found.
+323,Remote Talent Connect,Staffing and Recruiting,Unverified / Remote,,2022,flagged,12,1,100,Multiple community fraud reports; no verifiable corporate registration found.
+324,Global Career Network,Staffing and Recruiting,Unverified / Remote,,2022,flagged,14,2,299,Multiple community fraud reports; no verifiable corporate registration found.
+325,PayDay Staffing Co.,Staffing and Recruiting,Unverified / Remote,,2022,flagged,5,0,372,Multiple community fraud reports; no verifiable corporate registration found.
+326,Instant Hire Agency,Staffing and Recruiting,Unverified / Remote,,2023,flagged,13,0,443,Multiple community fraud reports; no verifiable corporate registration found.
+327,WorldWide Remote Jobs,Staffing and Recruiting,Unverified / Remote,,2026,flagged,25,5,282,Multiple community fraud reports; no verifiable corporate registration found.
+328,TalentBridge Express,Staffing and Recruiting,Unverified / Remote,,2023,flagged,27,5,67,Multiple community fraud reports; no verifiable corporate registration found.
+329,Global Talent Solutions Inc.,Staffing and Recruiting,Unverified / Remote,,2024,flagged,8,1,38,Multiple community fraud reports; no verifiable corporate registration found.
+330,Staffing Today,Staffing and Recruiting,Unverified / Remote,,2024,flagged,8,5,267,Multiple community fraud reports; no verifiable corporate registration found.
+331,HireFast Global,Staffing and Recruiting,Unverified / Remote,,2026,flagged,21,2,71,Multiple community fraud reports; no verifiable corporate registration found.
+332,"JPMorgan Chase Bank, N.A.",Engineering,"Hyderabad, Telangana, India",,,verified,96,,0,Active employer on Indeed India (223 postings observed).
+333,Genpact,Government,"Mumbai, Maharashtra, India",,,verified,96,,0,Active employer on Indeed India (80 postings observed).
+334,Cognizant,Manufacturing,"Kolkata, West bengal, India",,,verified,96,,0,Active employer on Indeed India (75 postings observed).
+335,Ernst & Young,Consultant,"Bangalore, Karnataka, India",,,verified,96,,0,Active employer on Indeed India (55 postings observed).
+336,Lionbridge Technologies,Engineering,"Coimbatore, Tamil nadu, India",,,verified,96,,0,Active employer on Indeed India (52 postings observed).
+337,ANI Calls India Private Limited,Manufacturing,"India, India",,,verified,96,,0,Active employer on Indeed India (42 postings observed).
+338,skilora,Management,"Delhi, Delhi, India",,,verified,96,,0,Active employer on Indeed India (31 postings observed).
+339,Standard Chartered,Admin,"Mumbai, Maharashtra, India",,,verified,96,,0,Active employer on Indeed India (29 postings observed).
+340,Rexon-Proserv,Government,"Bhopal, Madhya pradesh, India",,,verified,96,,0,Active employer on Indeed India (28 postings observed).
+341,Marg Hospitality,Restaurant,"Mumbai, Maharashtra, India",,,verified,96,,0,Active employer on Indeed India (28 postings observed).
+342,MSR India,Advertising,"Neral, Maharashtra, India",,,verified,96,,0,Active employer on Indeed India (27 postings observed).
+343,Citi,IT,"Kolkata, West bengal, India",,,verified,96,,0,Active employer on Indeed India (26 postings observed).
+344,Brand Provoke Consultants,IT,"Hyderabad, Telangana, India",,,verified,96,,0,Active employer on Indeed India (26 postings observed).
+345,Reliance Jio Infocomm Limited,Management,"Bangalore, Karnataka, India",,,verified,96,,0,Active employer on Indeed India (24 postings observed).
+346,"Marriott International, Inc",Security,"India, India",,,verified,96,,0,Active employer on Indeed India (24 postings observed).
+347,Vodafone,Sales,"Hyderabad, Telangana, India",,,verified,96,,0,Active employer on Indeed India (23 postings observed).
+348,EY,Admin,"Bangalore, Karnataka, India",,,verified,96,,0,Active employer on Indeed India (23 postings observed).
+349,HEADSTART GLOBAL,Consultant,"Mumbai, Maharashtra, India",,,verified,96,,0,Active employer on Indeed India (23 postings observed).
+350,NTT DATA Services,IT,"Gurgaon, Haryana, India",,,verified,96,,0,Active employer on Indeed India (21 postings observed).
+351,IM Solutions,Publishing,"Thiruvananthapuram, Kerala, India",,,verified,96,,0,Active employer on Indeed India (18 postings observed).
+352,Inspire Global Solutions,Human Resources,"India, India",,,verified,95,,0,Active employer on Indeed India (17 postings observed).
+353,Fox Media Hub,Publishing,"Vandalur, Tamil nadu, India",,,verified,94,,0,Active employer on Indeed India (16 postings observed).
+354,PwC,Manufacturing,"Pune, Maharashtra, India",,,verified,94,,0,Active employer on Indeed India (16 postings observed).
+355,UST Global Singapore Pte Limited,IT,"Pune, Maharashtra, India",,,verified,94,,0,Active employer on Indeed India (16 postings observed).
+356,ITIPS ADVISORY,Human Resources,"Noida, Uttar pradesh, India",,,verified,94,,0,Active employer on Indeed India (16 postings observed).
+357,Barclays,Engineering,"India, India",,,verified,93,,0,Active employer on Indeed India (15 postings observed).
+358,Solitaire Infotech Solution,Hospitality,"India, India",,,verified,93,,0,Active employer on Indeed India (15 postings observed).
+359,Virtusa,Engineering,"Gurgaon, Haryana, India",,,verified,93,,0,Active employer on Indeed India (15 postings observed).
+360,Yashus Digital Marketing,Marketing,"Madambakkam, Tamil nadu, India",,,verified,93,,0,Active employer on Indeed India (15 postings observed).
+361,AJ Career,Management,"Vasai, Maharashtra, India",,,verified,92,,0,Active employer on Indeed India (14 postings observed).
+362,Yes Bank,Management,"Hyderabad, Telangana, India",,,verified,92,,0,Active employer on Indeed India (14 postings observed).
+363,Confer Global,Bank,"Pune, Maharashtra, India",,,verified,92,,0,Active employer on Indeed India (14 postings observed).
+364,NTT DATA Global Delivery Services Limited,Consultant,"Mumbai, Maharashtra, India",,,verified,92,,0,Active employer on Indeed India (14 postings observed).
+365,Wells Fargo,Engineering,"Bangalore, Karnataka, India",,,verified,92,,0,Active employer on Indeed India (14 postings observed).
+366,Matrix Weighing Systems,Facilities,"Goa, Goa, India",,,verified,91,,0,Active employer on Indeed India (13 postings observed).
+367,Hewlett Packard Enterprise,Construction,"Multi, West bengal, India",,,verified,91,,0,Active employer on Indeed India (13 postings observed).
+368,Bhartia Management Consultancy,Admin,"Haora, West bengal, India",,,verified,90,,0,Active employer on Indeed India (12 postings observed).
+369,Dell Technologies,IT,"Gurgaon, Haryana, India",,,verified,90,,0,Active employer on Indeed India (12 postings observed).
+370,DXC,Finance,"Pune, Maharashtra, India",,,verified,90,,0,Active employer on Indeed India (12 postings observed).
+371,State Street,Bank,"Gurgaon, Haryana, India",,,verified,90,,0,Active employer on Indeed India (12 postings observed).
+372,DXC Technology India,Engineering,"Bangalore, Karnataka, India",,,verified,89,,0,Active employer on Indeed India (11 postings observed).
+373,State Street Corporation,Construction,"Pune, Maharashtra, India",,,verified,89,,0,Active employer on Indeed India (11 postings observed).
+374,Siemens Technology and Services Private Limited,IT,"Mumbai, Maharashtra, India",,,verified,89,,0,Active employer on Indeed India (11 postings observed).
+375,Ericsson,Engineering,"Hyderabad, Telangana, India",,,verified,89,,0,Active employer on Indeed India (11 postings observed).
+376,CIEL HR Services,Hospitality,"Ahmedabad, Gujarat, India",,,verified,89,,0,Active employer on Indeed India (11 postings observed).
+377,HDFC Bank,Manufacturing,"Gurgaon, Haryana, India",,,verified,89,,0,Active employer on Indeed India (11 postings observed).
+378,Credit Suisse,Management,"Bangalore, Karnataka, India",,,verified,89,,0,Active employer on Indeed India (11 postings observed).
+379,General Electric,Management,"Delhi, Delhi, India",,,verified,89,,0,Active employer on Indeed India (11 postings observed).
+380,Wipro Limited,Manufacturing,"Hyderabad, Telangana, India",,,verified,89,,0,Active employer on Indeed India (11 postings observed).
+381,iTool Solutions,IT,"Coimbatore, Tamil nadu, India",,,verified,88,,0,Active employer on Indeed India (10 postings observed).
+382,D Source,IT,"Bangalore, Karnataka, India",,,verified,88,,0,Active employer on Indeed India (10 postings observed).
+383,Coforge,IT,"Delhi, Delhi, India",,,verified,88,,0,Active employer on Indeed India (10 postings observed).
+384,Honeywell,Customer Service,"Ramesh Nagar, Karnataka, India",,,verified,88,,0,Active employer on Indeed India (10 postings observed).
+385,Tata Communications,IT,"Pune, Maharashtra, India",,,verified,88,,0,Active employer on Indeed India (10 postings observed).
+386,Manoj Kumar Sahoo (Proprietor of Corporate Resources),Manufacturing,"Hyderabad, Telangana, India",,,verified,88,,0,Active employer on Indeed India (10 postings observed).
+387,Epsilon India,Management,"Pune, Maharashtra, India",,,verified,87,,0,Active employer on Indeed India (9 postings observed).
+388,Micron,Engineering,"Bangalore, Karnataka, India",,,verified,87,,0,Active employer on Indeed India (9 postings observed).
+389,Deutsche Bank,Bank,"Mumbai, Maharashtra, India",,,verified,87,,0,Active employer on Indeed India (9 postings observed).
+390,(Proprietor Of Birla Technology),Human Resources,"Thane, Maharashtra, India",,,verified,87,,0,Active employer on Indeed India (9 postings observed).
+391,Morgan Stanley,Telecommunication,"Pollachi, Tamil nadu, India",,,verified,87,,0,Active employer on Indeed India (9 postings observed).
+392,Minda Solution Tech Mark,Arts,"Nashik, Maharashtra, India",,,verified,87,,0,Active employer on Indeed India (9 postings observed).
+393,bajajallianz,Management,"New delhi, Delhi, India",,,verified,87,,0,Active employer on Indeed India (9 postings observed).
+394,C2L Biz,IT,"Chennai, Tamil nadu, India",,,verified,87,,0,Active employer on Indeed India (9 postings observed).
+395,Fujitsu,Finance,"Trichur, Kerala, India",,,verified,87,,0,Active employer on Indeed India (9 postings observed).
+396,ElasticRun,Management,"Pune, Maharashtra, India",,,verified,87,,0,Active employer on Indeed India (9 postings observed).
+397,UnitedHealth Group,Engineering,"Bangalore, Karnataka, India",,,verified,87,,0,Active employer on Indeed India (9 postings observed).
+398,Bank of America,Scientific,"Pune, Maharashtra, India",,,verified,87,,0,Active employer on Indeed India (9 postings observed).
+399,amdocs,Engineering,"Pune, Maharashtra, India",,,verified,87,,0,Active employer on Indeed India (9 postings observed).
+400,Riju Karan (Proprietor Of Toyota Climax India),Engineering,"Delhi, Delhi, India",,,verified,86,,0,Active employer on Indeed India (8 postings observed).
+401,Global Kidz,Management,"India, India",,,verified,86,,0,Active employer on Indeed India (8 postings observed).
+402,hdb financial services,Customer Service,"Hyderabad, Telangana, India",,,verified,86,,0,Active employer on Indeed India (8 postings observed).
+403,Flexiventures Private Limited,Manufacturing,"Chennai, Tamil nadu, India",,,verified,86,,0,Active employer on Indeed India (8 postings observed).
+404,ADCI - Karnataka,Training,"Chennai, Tamil nadu, India",,,verified,86,,0,Active employer on Indeed India (8 postings observed).
+405,CAFSInfotech,IT,"Bangalore, Karnataka, India",,,verified,86,,0,Active employer on Indeed India (8 postings observed).
+406,Lavya Associates,Manufacturing,"Sikar, Rajasthan, India",,,verified,86,,0,Active employer on Indeed India (8 postings observed).
+407,Outpace Consulting Services,Fresher,"Gandhinagar, Gujarat, India",,,verified,86,,0,Active employer on Indeed India (8 postings observed).
+408,Blue Yonder,Human Resources,"India, India",,,verified,85,,0,Active employer on Indeed India (7 postings observed).
+409,Philips,Management,"Airoli, Maharashtra, India",,,verified,85,,0,Active employer on Indeed India (7 postings observed).
+410,Infosys Limited,Consultant,"Delhi, Delhi, India",,,verified,85,,0,Active employer on Indeed India (7 postings observed).
+411,CoreIP Legal Services,Legal,"Thiruvananthapuram, Kerala, India",,,verified,85,,0,Active employer on Indeed India (7 postings observed).
+412,Learnship Networks GmbH,Electronics,"Bellandur, Karnataka, India",,,verified,85,,0,Active employer on Indeed India (7 postings observed).
+413,WELLS FARGO BANK,Manufacturing,"Mumbai, Maharashtra, India",,,verified,85,,0,Active employer on Indeed India (7 postings observed).
+414,Gartner,Management,"Chennai, Tamil nadu, India",,,verified,85,,0,Active employer on Indeed India (7 postings observed).
+415,Infochola,Management,"Chennai, Tamil nadu, India",,,verified,85,,0,Active employer on Indeed India (7 postings observed).
+416,Syngene,Healthcare,"India, India",,,verified,85,,0,Active employer on Indeed India (7 postings observed).
+417,Genpact India Private Limited,Consultant,"Bangalore, Karnataka, India",,,verified,85,,0,Active employer on Indeed India (7 postings observed).
+418,S&P Global,Engineering,"Oragadam, Tamil nadu, India",,,verified,84,,0,Active employer on Indeed India (6 postings observed).
+419,Sanap & Associates,Marketing,"Ludhiana, Punjab, India",,,verified,84,,0,Active employer on Indeed India (6 postings observed).
+420,Cerner Corporation,Logistics,"Hyderabad, Telangana, India",,,verified,84,,0,Active employer on Indeed India (6 postings observed).
+421,Volvo Group,Real Estate,"Delhi, Delhi, India",,,verified,84,,0,Active employer on Indeed India (6 postings observed).
+422,ABB,Manufacturing,"Pune, Maharashtra, India",,,verified,84,,0,Active employer on Indeed India (6 postings observed).
+423,AI Engineer,Engineering,"Nagpur, Maharashtra, India",,,verified,84,,0,Active employer on Indeed India (6 postings observed).
+424,Connecting 2 Work,Manufacturing,"Gujarat, Gujarat, India",,,verified,84,,0,Active employer on Indeed India (6 postings observed).
+425,CNTC India Projects,Sales,"Bangalore, Karnataka, India",,,verified,84,,0,Active employer on Indeed India (6 postings observed).
+426,Transasia,Scientific,"Jaipur, Rajasthan, India",,,verified,84,,0,Active employer on Indeed India (6 postings observed).
+427,"CGI Group, Inc.",Engineering,"Bangalore, Karnataka, India",,,verified,84,,0,Active employer on Indeed India (6 postings observed).
+428,Shakun Sharma (Proprietor Of FM Industry),Human Resources,"Pune, Maharashtra, India",,,verified,84,,0,Active employer on Indeed India (6 postings observed).
+429,Innovary Technologies,IT,"Hyderabad, Telangana, India",,,verified,84,,0,Active employer on Indeed India (6 postings observed).
+430,Luxoft,Admin,"Karnataka, Karnataka, India",,,verified,84,,0,Active employer on Indeed India (6 postings observed).
+431,Informatica,Computer,"Bangalore, Karnataka, India",,,verified,84,,0,Active employer on Indeed India (6 postings observed).
+432,Disys India Private Limited,Customer Service,"Mohali, Punjab, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+433,Vudum Srinu (Proprietor Of Suncity Star Technology),Fresher,"Lucknow, Uttar pradesh, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+434,Tantransh Solutions,IT,"Vadodara, Gujarat, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+435,Apollo Hospitals,Admin,"La Gardens, West bengal, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+436,Futures and Careers,Recruitment,"Gurgaon, Haryana, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+437,Yash Technologies,Consultant,"India, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+438,Johnson Controls,Accounting,"Vikhroli, Maharashtra, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+439,Wipro LTD,Management,"Bangalore, Karnataka, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+440,Zensar Technologies,Engineering,"Pune, Maharashtra, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+441,iT Gurus Software,Facilities,"Pune, Maharashtra, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+442,Bharat Service,Facilities,"Haora, West bengal, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+443,Abbott Laboratories,Sales,"Remote, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+444,PayPal,IT,"Hyderabad, Telangana, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+445,Venpa Staffing Services India Private Limited,Customer Service,"Thiruvananthapuram, Kerala, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+446,Innovsol Systems & Technology,IT,"Andheri, Maharashtra, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+447,Paradise Placement Consultancy,Sales,"Mumbai, Maharashtra, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+448,Finastra Software Solutions India Private Limited,Healthcare,"Delhi, Delhi, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+449,DynPro India Private Limited,Engineering,"Ahmedabad, Gujarat, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+450,Publicis Sapient,Marketing,"Pune, Maharashtra, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+451,Siemens Limited,Automation,"Hyderabad, Telangana, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+452,Société Générale,Education,"Gurgaon, Haryana, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+453,ADCI HYD 13 SEZ,Insurance,"Thiruvananthapuram, Kerala, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+454,Palo Alto Networks,Management,"Mumbai, Maharashtra, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+455,tecHindustan Solutions,Engineering,"Bangalore, Karnataka, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+456,Ciel,Management,"Pune, Maharashtra, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+457,Rubrik Job Board,Computer,"Hyderabad, Telangana, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
+458,Sapna Manish Sharma (Proprietor Of JBM India),Pharmaceutical,"Chennai, Tamil nadu, India",,,verified,83,,0,Active employer on Indeed India (5 postings observed).
